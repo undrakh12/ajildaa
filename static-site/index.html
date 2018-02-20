@@ -4,26 +4,110 @@
 	<title>Ажилдаа</title>
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/uikit.min.css" />
-    <link rel="stylesheet" href="css/main.css" />
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/main.css" />
+	<link rel="stylesheet" href="css/uikit.min.css" />
+	
 </head>
 <body>
-	<div class="uk-container">
-		<div class="uk-grid-small" uk-grid>
-			<h1 class="logo">Ажилдаа</h1>
-			<div class="uk-flex uk-flex-center">
-			    <div>
-			    	<input type="text" name="">
-			    </div>
-			    <div>
-			    	<input type="text" name="">
-			    </div>
+	<div class="header">
+		<nav class="main-navbar uk-navbar-container" uk-navbar>
+			<div class="uk-navbar-left">
+		
+				<ul class="uk-navbar-nav">
+					<li class="uk-active"><a href="">Job search</a></li>
+				</ul>
+		
+			</div>
+		</nav>
+	</div>
+
+	<div class="body">
+		<div class="uk-container uk-container-center">
+			<div class="uk-grid-small uk-text-center uk-margin-top" uk-grid>
+				<div class="uk-width-1-1">
+					<div class="head-section">
+						<img src="images/logo.png" class="logo" alt="">
+					</div>
+
+					<div class="search-section uk-margin-top">
+
+						<div class="first-search-section">
+							<h6 class="h5-remove-bottom-margin uk-text-left"><strong>what</strong> job title, keyword, or company</h6>
+							<div class="uk-margin uk-margin-remove-top">
+								<div class="uk-inline search-inline">
+									<a class="uk-form-icon uk-form-icon-flip" href="#" uk-icon="icon: search"></a>
+									<input class="search-input uk-input" type="text">
+								</div>
+							</div>
+						</div>
+
+						<div class="second-search-section">
+							<h6 class="h5-remove-bottom-margin uk-text-left"><strong>where</strong> city, state, or zip code</h6>
+							<div class="uk-margin uk-margin-remove-top">
+								<div class="uk-inline search-inline">
+									<a class="uk-form-icon uk-form-icon-flip" href="#" uk-icon="icon: location"></a>
+									<input class="search-input uk-input" type="text">
+								</div>
+							</div>
+						</div>
+
+						<div class="third-section uk-margin-medium-top">
+							<button class="uk-button uk-button-primary btn">Find Jobs</button>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer-section uk-margin-medium-top">
+		<div class="rec-jobs">
+			<div class="uk-grid">
+				<div class="uk-width-1-1 first-table">
+						<ul class="uk-list uk-list-striped">
+							<li>
+								<div class="uk-clearfix">
+									<div class="uk-float-left">
+										<a href="">Recommendation job</a>
+									</div>
+									<div class="uk-float-right">
+										<span class="uk-margin-small-right" uk-icon="sign-in"></span>
+									</div>
+									
+								</div>
+							</li>
+							<li>
+								<div class="uk-clearfix">
+									<div class="uk-float-left">
+										<a href="">Recommendation job</a>
+									</div>
+									<div class="uk-float-right">
+										<span class="uk-margin-small-right" uk-icon="sign-in"></span>
+									</div>
+									
+								</div>
+							</li>
+							<li>
+								<div class="uk-clearfix">
+									<div class="uk-float-left">
+										<a href="">Recommendation job</a>
+									</div>
+									<div class="uk-float-right">
+										<span class="uk-margin-small-right" uk-icon="sign-in"></span>
+									</div>
+									
+								</div>
+							</li>
+						</ul>
+						
+				</div>
 			</div>
 		</div>
 	</div>
 	<!-- JS -->
-    <script src="js/uikit.min.js"></script>
-    <script src="js/uikit-icons.min.js"></script>
+	<script src="js/uikit.min.js"></script>
+	<script src="js/uikit-icons.min.js"></script>
 </body>
 </html>
