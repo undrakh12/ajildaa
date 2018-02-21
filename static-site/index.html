@@ -1,26 +1,29 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Ажилдаа</title>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Ажилдаа</title>
 	<!-- CSS -->
 	<link rel="stylesheet" href="css/main.css" />
 	<link rel="stylesheet" href="css/uikit.min.css" />
-	
+
 	<link rel="manifest" href="/manifest.json">
 </head>
+
 <body>
-	<header class="header">
+	<header class="header" uk-sticky="top: 0">
 		<nav class="main-navbar uk-navbar-container" uk-navbar>
 			<div class="uk-navbar-left">
-		
+
 				<ul class="uk-navbar-nav">
-					<li class="uk-active"><a href="">Job search</a></li>
+					<li class="uk-active">
+						<a href="">Job search</a>
+					</li>
 				</ul>
-		
+
 			</div>
 		</nav>
 	</header>
@@ -36,7 +39,8 @@
 					<div class="search-section uk-margin-top">
 
 						<div class="first-search-section">
-							<h6 class="h5-remove-bottom-margin uk-text-left"><strong>what</strong> job title, keyword, or company</h6>
+							<h6 class="h5-remove-bottom-margin uk-text-left">
+								<strong>what</strong> job title, keyword, or company</h6>
 							<div class="uk-margin uk-margin-remove-top">
 								<div class="uk-inline search-inline">
 									<a class="uk-form-icon uk-form-icon-flip" href="#" uk-icon="icon: search"></a>
@@ -46,7 +50,8 @@
 						</div>
 
 						<div class="second-search-section">
-							<h6 class="h5-remove-bottom-margin uk-text-left"><strong>where</strong> city, state, or zip code</h6>
+							<h6 class="h5-remove-bottom-margin uk-text-left">
+								<strong>where</strong> city, state, or zip code</h6>
 							<div class="uk-margin uk-margin-remove-top">
 								<div class="uk-inline search-inline">
 									<a class="uk-form-icon uk-form-icon-flip" href="#" uk-icon="icon: location"></a>
@@ -56,7 +61,8 @@
 						</div>
 
 						<div class="third-section uk-margin-medium-top">
-							<button class="uk-button uk-button-primary btn">Find Jobs</button>
+
+							<a href="search-result.html" class="uk-button uk-button-primary btn">Find Jobs</a>
 						</div>
 					</div>
 
@@ -69,46 +75,55 @@
 		<div class="rec-jobs">
 			<div class="uk-grid">
 				<div class="uk-width-1-1 first-table">
-						<ul class="uk-list border-top">
-							<li class="uk-padding uk-padding-small">
-								<div class="uk-clearfix">
-									<div class="uk-float-left">
-										<a href=""><h5><span class="uk-margin-small-right" uk-icon="settings"></span>Recommended job</h5></a>
-									</div>
-									<div class="uk-float-right">
-										<span class="uk-margin-small-right" uk-icon="sign-in"></span>
-									</div>
-									
+					<ul class="uk-list border-top">
+						<li class="uk-padding uk-padding-small">
+							<div class="uk-clearfix">
+								<div class="uk-float-left">
+									<a href="">
+										<h5>
+											<span class="uk-margin-small-right" uk-icon="settings"></span>Recommended job</h5>
+									</a>
 								</div>
-							</li>
-							<li class="uk-padding uk-padding-small uk-padding-remove-top">
-								<div class="uk-clearfix">
-									<div class="uk-float-left">
-										<a href=""><h5><span class="uk-margin-small-right" uk-icon="nut"></span>My Resume</h5></a>
-									</div>
-									<div class="uk-float-right">
-										<span class="uk-margin-small-right" uk-icon="sign-in"></span>
-									</div>
-									
+								<div class="uk-float-right">
+									<span class="uk-margin-small-right" uk-icon="arrow-right"></span>
 								</div>
-							</li>
-							<li class="uk-padding uk-padding-small uk-padding-remove-top">
-								<div class="uk-clearfix">
-									<div class="uk-float-left">
-										<a href=""><h5><span class="uk-margin-small-right" uk-icon="user"></span>Sign in</h5></a>
-									</div>
-									<div class="uk-float-right">
-										<span class="uk-margin-small-right" uk-icon="sign-in"></span>
-									</div>
-									
-								</div>
-							</li>
-						</ul>
 
-						<div class="footer-section uk-padding uk-padding-small">
-							<h6>@2018 Ажилдаа - Cookies, Privacy and Terms</h6>
-						</div>
-						
+							</div>
+						</li>
+						<li class="uk-padding uk-padding-small uk-padding-remove-top">
+							<div class="uk-clearfix">
+								<div class="uk-float-left">
+									<a href="">
+										<h5>
+											<span class="uk-margin-small-right" uk-icon="nut"></span>My Resume</h5>
+									</a>
+								</div>
+								<div class="uk-float-right">
+									<span class="uk-margin-small-right" uk-icon="arrow-right"></span>
+								</div>
+
+							</div>
+						</li>
+						<li class="uk-padding uk-padding-small uk-padding-remove-top">
+							<div class="uk-clearfix">
+								<div class="uk-float-left">
+									<a href="">
+										<h5>
+											<span class="uk-margin-small-right" uk-icon="user"></span>Sign in</h5>
+									</a>
+								</div>
+								<div class="uk-float-right">
+									<span class="uk-margin-small-right" uk-icon="arrow-right"></span>
+								</div>
+
+							</div>
+						</li>
+					</ul>
+
+					<div class="footer-section uk-padding uk-padding-small">
+						<h6>@2018 Ажилдаа - Cookies, Privacy and Terms</h6>
+					</div>
+
 				</div>
 			</div>
 		</div>
@@ -119,4 +134,5 @@
 
 	<script src="js/app.js" async></script>
 </body>
+
 </html>

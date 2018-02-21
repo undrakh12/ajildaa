@@ -14,16 +14,16 @@
 
 var dataCacheName = 'ajildaa';
 var cacheName = 'ajildaa_v_1';
-var filesToCache = [
-  '/',
-  '/index.html',
-  '/js/app.js',
-  '/js/uikit.min.js',
-  '/js/uikit-icons.min.js',
-  '/css/main.css',
-  '/css/uikit.min.css',
-  '/images/logo.png'
-];    
+// var filesToCache = [
+//   '/',
+//   '/index.html',
+//   '/js/app.js',
+//   '/js/uikit.min.js',
+//   '/js/uikit-icons.min.js',
+//   '/css/main.css',
+//   '/css/uikit.min.css',
+//   '/images/logo.png'
+// ];    
 
 self.addEventListener('install', function(e) {
   console.log('[ServiceWorker] Install');
