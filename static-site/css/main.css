@@ -16,6 +16,7 @@ body {
 h1, h2, h3, h4, h5, h6{
 	font-family: 'OpenSans', sans-serif !important;
 	color: #000 !important;
+	margin-bottom: 0 !important;
 }
 
 .main-navbar {
@@ -47,10 +48,14 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .btn {
-	background: #525bb0 !important;
+	background: #4928f0 !important;
 	border-radius: 30px !important;
 	width: 95%;
 	font-size: 0.975rem !important;
 	text-transform: capitalize !important;
 	line-height: 45px !important;
+}
+
+.border-top {
+	border-top: 2px solid #e5e5e5;
 }

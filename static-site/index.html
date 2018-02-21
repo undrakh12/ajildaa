@@ -3,14 +3,17 @@
 <head>
 	<title>Ажилдаа</title>
 	<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ажилдаа</title>
 	<!-- CSS -->
 	<link rel="stylesheet" href="css/main.css" />
 	<link rel="stylesheet" href="css/uikit.min.css" />
 	
+	<link rel="manifest" href="/manifest.json">
 </head>
 <body>
-	<div class="header">
+	<header class="header">
 		<nav class="main-navbar uk-navbar-container" uk-navbar>
 			<div class="uk-navbar-left">
 		
@@ -20,9 +23,9 @@
 		
 			</div>
 		</nav>
-	</div>
+	</header>
 
-	<div class="body">
+	<main class="body">
 		<div class="uk-container uk-container-center">
 			<div class="uk-grid-small uk-text-center uk-margin-top" uk-grid>
 				<div class="uk-width-1-1">
@@ -60,17 +63,17 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</main>
 
-	<div class="footer-section uk-margin-medium-top">
+	<footer class="footer-section uk-margin-medium-top">
 		<div class="rec-jobs">
 			<div class="uk-grid">
 				<div class="uk-width-1-1 first-table">
-						<ul class="uk-list uk-list-striped">
-							<li>
+						<ul class="uk-list border-top">
+							<li class="uk-padding uk-padding-small">
 								<div class="uk-clearfix">
 									<div class="uk-float-left">
-										<a href="">Recommendation job</a>
+										<a href=""><h5><span class="uk-margin-small-right" uk-icon="settings"></span>Recommended job</h5></a>
 									</div>
 									<div class="uk-float-right">
 										<span class="uk-margin-small-right" uk-icon="sign-in"></span>
@@ -78,10 +81,10 @@
 									
 								</div>
 							</li>
-							<li>
+							<li class="uk-padding uk-padding-small uk-padding-remove-top">
 								<div class="uk-clearfix">
 									<div class="uk-float-left">
-										<a href="">Recommendation job</a>
+										<a href=""><h5><span class="uk-margin-small-right" uk-icon="nut"></span>My Resume</h5></a>
 									</div>
 									<div class="uk-float-right">
 										<span class="uk-margin-small-right" uk-icon="sign-in"></span>
@@ -89,10 +92,10 @@
 									
 								</div>
 							</li>
-							<li>
+							<li class="uk-padding uk-padding-small uk-padding-remove-top">
 								<div class="uk-clearfix">
 									<div class="uk-float-left">
-										<a href="">Recommendation job</a>
+										<a href=""><h5><span class="uk-margin-small-right" uk-icon="user"></span>Sign in</h5></a>
 									</div>
 									<div class="uk-float-right">
 										<span class="uk-margin-small-right" uk-icon="sign-in"></span>
@@ -101,13 +104,19 @@
 								</div>
 							</li>
 						</ul>
-						<!---->
+
+						<div class="footer-section uk-padding uk-padding-small">
+							<h6>@2018 Ажилдаа - Cookies, Privacy and Terms</h6>
+						</div>
+						
 				</div>
 			</div>
 		</div>
-	</div>
+	</footer>
 	<!-- JS -->
 	<script src="js/uikit.min.js"></script>
 	<script src="js/uikit-icons.min.js"></script>
+
+	<script src="js/app.js" async></script>
 </body>
 </html>
