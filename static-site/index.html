@@ -6,6 +6,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#000" />
 	<!-- CSS -->
 	<link rel="stylesheet" href="css/main.css" />
 	<link rel="stylesheet" href="css/uikit.min.css" />
@@ -17,10 +18,9 @@
 	<header class="header" uk-sticky="top: 0">
 		<nav class="main-navbar uk-navbar-container" uk-navbar>
 			<div class="uk-navbar-left">
-
 				<ul class="uk-navbar-nav">
 					<li class="uk-active">
-						<a href="">Job search</a>
+						<a>Ажил хайх</a>
 					</li>
 				</ul>
 
@@ -39,8 +39,8 @@
 					<div class="search-section uk-margin-top">
 
 						<div class="first-search-section">
-							<h6 class="h5-remove-bottom-margin uk-text-left">
-								<strong>what</strong> job title, keyword, or company</h6>
+							<h6 class="uk-margin-small-bottom h6-title uk-margin-left uk-text-left">
+								<strong>ЮУ</strong> ажлын нэр, үг, эсвэл компани</h6>
 							<div class="uk-margin uk-margin-remove-top">
 								<div class="uk-inline search-inline">
 									<a class="uk-form-icon uk-form-icon-flip" href="#" uk-icon="icon: search"></a>
@@ -50,8 +50,8 @@
 						</div>
 
 						<div class="second-search-section">
-							<h6 class="h5-remove-bottom-margin uk-text-left">
-								<strong>where</strong> city, state, or zip code</h6>
+							<h6 class="uk-margin-small-bottom uk-margin-left uk-text-left">
+								<strong>ХААНА</strong> хот, дүүрэг, эсвэл зип код</h6>
 							<div class="uk-margin uk-margin-remove-top">
 								<div class="uk-inline search-inline">
 									<a class="uk-form-icon uk-form-icon-flip" href="#" uk-icon="icon: location"></a>
@@ -62,7 +62,7 @@
 
 						<div class="third-section uk-margin-medium-top">
 
-							<a href="search-result.html" class="uk-button uk-button-primary btn">Find Jobs</a>
+							<a href="search-result.html" class="uk-button uk-button-primary btn">Цагийн ажил хайх</a>
 						</div>
 					</div>
 
@@ -81,7 +81,7 @@
 								<div class="uk-float-left">
 									<a href="">
 										<h5>
-											<span class="uk-margin-small-right" uk-icon="settings"></span>Recommended job</h5>
+											<span class="uk-margin-small-right" uk-icon="settings"></span>Санал Болгож Буй Ажил</h5>
 									</a>
 								</div>
 								<div class="uk-float-right">
@@ -95,7 +95,7 @@
 								<div class="uk-float-left">
 									<a href="">
 										<h5>
-											<span class="uk-margin-small-right" uk-icon="nut"></span>My Resume</h5>
+											<span class="uk-margin-small-right" uk-icon="nut"></span>Миний Анкет</h5>
 									</a>
 								</div>
 								<div class="uk-float-right">
@@ -109,21 +109,20 @@
 								<div class="uk-float-left">
 									<a href="">
 										<h5>
-											<span class="uk-margin-small-right" uk-icon="user"></span>Sign in</h5>
+											<span class="uk-margin-small-right" uk-icon="user"></span>Нэвтрэх</h5>
 									</a>
 								</div>
 								<div class="uk-float-right">
 									<span class="uk-margin-small-right" uk-icon="arrow-right"></span>
 								</div>
-
 							</div>
 						</li>
 						<li class="uk-padding uk-padding-small uk-padding-remove-top">
-							<div class="uk-clearfix">
+							<div class="uk-clearfix post-link">
 								<div class="uk-float-left">
 									<a href="post-job.html">
 										<h5>
-											<span class="uk-margin-small-right" uk-icon="bell"></span>Post Job</h5>
+											<span class="uk-margin-small-right" uk-icon="bell"></span>Ажил Нийтлэх</h5>
 									</a>
 								</div>
 								<div class="uk-float-right">
@@ -135,7 +134,7 @@
 					</ul>
 
 					<div class="footer-section uk-padding uk-padding-small">
-						<h6>@2018 Ажилдаа - Cookies, Privacy and Terms</h6>
+						<h6>©2018 Ажилдаа - Бүх эрх хуулиар хамгаалагдсан</h6>
 					</div>
 
 				</div>
@@ -147,6 +146,13 @@
 	<script src="js/uikit-icons.min.js"></script>
 
 	<script src="js/app.js" async></script>
+
+	<!-- <script>
+		document.getElementsByClassName('post-link')[0]
+			.addEventListener('click', function (event) {
+				window.location.href = "post-job.html";
+			});
+	</script> -->
 </body>
 
 </html>

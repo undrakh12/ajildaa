@@ -20,8 +20,16 @@ h1, h2, h3, h4, h5, h6{
 	margin-top: 0 !important;
 }
 
+a{
+	text-decoration: none !important;
+}
+
+btn{
+	text-decoration: none !important;
+}
+
 .main-navbar {
-	height: 40px;
+	height: 45px;
 	background: #000000 !important;	
 }
 	
@@ -35,9 +43,8 @@ h1, h2, h3, h4, h5, h6{
 	width: 40%;
 }
 
-.h5-remove-bottom-margin {
-	margin-bottom: 10px;
-	margin-left: 25px;
+.h6-title {
+	font-size: 
 }
 
 .search-inline {
@@ -61,14 +68,26 @@ h1, h2, h3, h4, h5, h6{
 	border-top: 2px solid #e5e5e5;
 }
 
+.footer-section h6{
+	font-size: 12px;
+}
+
 /* search-result.html */
 .no-margin {
 	margin-bottom: 0;
 }
 
+#my-id svg{
+	color: #f4cb4d;
+}
+
+.padding-0 { 
+	padding-left: 0 !important;
+}
+
 .btn-filter {
 	border-radius: 47px !important;
-	padding: 0 15px !important;
+	padding: 0 10px !important;
 	color: #4928f0 !important;
 }
 
@@ -77,6 +96,10 @@ h1, h2, h3, h4, h5, h6{
 	padding-left: 0 !important;
 	border-color: #4a29f0 !important;
 }
+
+	.uk-tab>.uk-active>a {
+		border-color: #4a29f0 !important;
+	}
 
 .job-list .days {
 	color: #7a8286 !important;
@@ -114,7 +137,7 @@ h1, h2, h3, h4, h5, h6{
 		color: #4928f0;
 		border-radius: 30px;
 		font-weight: bold;
-		text-transform: capitalize;
+		text-transform: inherit;
 	}
 
 	.all-result li:nth-last-child(2) button {
@@ -122,10 +145,14 @@ h1, h2, h3, h4, h5, h6{
 		background: #4928f0;
 		border-radius: 30px;
 		font-weight: bold;
-		text-transform: capitalize;
+		text-transform: inherit;
 	}
 
 /* job.html */
+
+.job-height svg {
+	color: #f4cb4d;
+}
 
 /* .btn-outside {
 	position: fixed;
