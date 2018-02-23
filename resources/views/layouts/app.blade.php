@@ -1,31 +1,26 @@
 <!DOCTYPE html>
 <html lang="{{ app()->getLocale() }}">
 <head>
+    <title>Ажилдаа</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
+    <meta name="theme-color" content="#000" />
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/uikit.min.css" />
 
-    <title>Ажилдаа</title>
+    <link rel="manifest" href="/manifest.json"/>
 
-    <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <script src="js/jquery.min.js"></script>
 </head>
 <body>
     <div id="app">
         <nav class="navbar navbar-default navbar-static-top">
             <div class="container">
                 <div class="navbar-header">
-
-                    <!-- Collapsed Hamburger -->
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse" aria-expanded="false">
-                        <span class="sr-only">Toggle Navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
 
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ url('/') }}">
@@ -71,10 +66,10 @@
             </div>
         </nav>
 
-        @yield('content')
-    </div>
+    <!-- JS -->
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
 
-    <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}"></script>
+    <script src="js/app.js" async></script>
 </body>
 </html>
