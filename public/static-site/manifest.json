@@ -21,8 +21,13 @@
         "src": "images/logo2.png",
         "sizes": "256x256",
         "type": "image/png"
+      },
+      {
+        "src": "images/logo2.png",
+        "sizes": "512x512",
+        "type": "image/png"
       }],
-    "start_url": "/index.html",
+    "start_url": "/static-site/index.html",
     "display": "standalone",
     "background_color": "#3E4EB8",
     "theme_color": "#000"

@@ -29,7 +29,7 @@ var filesToCache = [
   '/css/main.css',
   '/css/uikit.min.css',
   '/images/logo.png',
-  './manifest.json'
+  '/manifest.json'
 ];    
 
 //Adding `install` event listener
