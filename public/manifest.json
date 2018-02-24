@@ -1,6 +1,6 @@
 {
     "name": "Ажилдаа",
-    "short_name": "Оюутнуудад зориулсан цагийн ажил хайх аппликейшн",
+    "short_name": "Ажилдаа",
     "icons": [{
       "src": "images/logo2.png",
         "sizes": "128x128",
@@ -21,8 +21,13 @@
         "src": "images/logo2.png",
         "sizes": "256x256",
         "type": "image/png"
+      },
+      {
+        "src": "images/logo2.png",
+        "sizes": "512x512",
+        "type": "image/png"
       }],
-    "start_url": "/index.html",
+    "start_url": "/?launcher=true",
     "display": "standalone",
     "background_color": "#3E4EB8",
     "theme_color": "#000"

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="mn">
 
 <head>
 	<title>Ажилдаа</title>
@@ -13,7 +13,7 @@
 	<link rel="stylesheet" href="css/main.css" />
 	<link rel="stylesheet" href="css/uikit.min.css" />
 
-	{{--<link rel="manifest" href="/manifest.json"/>--}}
+	<link rel="manifest" href="/manifest.json"/>
 
 	<script src="js/jquery.min.js"></script>
 </head>
@@ -41,7 +41,7 @@
 					</div>
 
 					<div class="search-section uk-margin-top">
-						<form action="search-result.html" id="form">
+						<form action="/result" id="form">
 							<div class="first-search-section">
 								<h6 class="uk-margin-small-bottom h6-title uk-margin-left uk-text-left">
 									<strong>ЮУ</strong> ажлын нэр, үг, эсвэл компани</h6>
@@ -98,7 +98,7 @@
 						<li class="uk-padding uk-padding-small uk-padding-remove-top">
 							<div class="uk-clearfix">
 								<div class="uk-float-left">
-									<a href="">
+									<a href="/viewjob">
 										<h5>
 											<span class="uk-margin-small-right" uk-icon="nut"></span>Миний Анкет</h5>
 									</a>
@@ -119,7 +119,7 @@
 										</h5>
 									</a>
 									@else
-									<a href="/login">
+									<a href="/">
 										<h5>
 											<span class="uk-margin-small-right" uk-icon="user"></span>
 											{{ Auth::user()->email }}
@@ -135,7 +135,7 @@
 						<li class="uk-padding uk-padding-small uk-padding-remove-top">
 							<div class="uk-clearfix post-link">
 								<div class="uk-float-left">
-									<a href="post-job.html">
+									<a href="/post-job">
 										<h5>
 											<span class="uk-margin-small-right" uk-icon="bell"></span>Ажил Нийтлэх</h5>
 									</a>
