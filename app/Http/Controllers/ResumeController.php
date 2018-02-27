@@ -3,11 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Job;
 
-class JobController extends Controller
+class ResumeController extends Controller
 {
-    protected $job = new Job();
     /**
      * Display a listing of the resource.
      *
@@ -15,7 +13,7 @@ class JobController extends Controller
      */
     public function index()
     {
-        return view('post-job');
+        //
     }
 
     /**
@@ -36,8 +34,7 @@ class JobController extends Controller
      */
     public function store(Request $request)
     {
-        $job = new Job();
-        $job->postJob();
+        //
     }
 
     /**
