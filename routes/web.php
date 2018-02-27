@@ -15,10 +15,6 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/job', function () {
-    return view('job');
-});
-
 Route::get('/result', function () {
     return view('search-result');
 });
@@ -30,6 +26,10 @@ Route::group(['middleware' => ['auth']], function() {
 
     Route::get('/apply', function () {
         return view('apply');
+    });
+
+    Route::get('/post-job', function () {
+        return view('post-job');
     });
 
     Route::resource('job','JobController');

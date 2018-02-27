@@ -47,6 +47,15 @@
                             {{ csrf_field() }}
                             <div class="first-search-section">
                                 <h6 class="uk-margin-small-bottom h6-title uk-margin-left uk-text-left">
+                                    <strong>Би бол</strong></h6>
+                                <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
+                                    <label><input class="uk-radio" type="radio" name="type" value="student" checked>Оюутан</label>
+                                    <label><input class="uk-radio" type="radio" name="type" value="employer">Ажил олгогч</label>
+                                </div>
+                            </div>
+                            
+                            <div class="first-search-section">
+                                <h6 class="uk-margin-small-bottom h6-title uk-margin-left uk-text-left">
                                     <strong>Нэр</strong></h6>
                                 <div class="uk-margin uk-margin-remove-top">
                                     <div class="uk-inline search-inline">
@@ -62,7 +71,7 @@
                                 <div class="uk-margin uk-margin-remove-top">
                                     <div class="uk-inline search-inline">
                                         <a class="uk-form-icon uk-form-icon-flip" href="#" uk-icon="icon: user"></a>
-                                        <input name="email" class="search-input uk-input" type="text" id="first" data-dependency="second">
+                                        <input name="email" class="search-input uk-input" type="text" id="first" data-dependency="third">
                                     </div>
                                 </div>
                             </div>
@@ -73,7 +82,7 @@
                                 <div class="uk-margin uk-margin-remove-top">
                                     <div class="uk-inline search-inline">
                                         <a class="uk-form-icon uk-form-icon-flip" href="#" uk-icon="icon: lock"></a>
-                                        <input name="password" class="search-input uk-input" type="password" id="second" data-dependency="third">
+                                        <input name="password" class="search-input uk-input" type="password" id="second" data-dependency="fourth">
                                     </div>
                                 </div>
                             </div>

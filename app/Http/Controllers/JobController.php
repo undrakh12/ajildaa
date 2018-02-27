@@ -7,7 +7,6 @@ use App\Job;
 
 class JobController extends Controller
 {
-    protected $job = new Job();
     /**
      * Display a listing of the resource.
      *

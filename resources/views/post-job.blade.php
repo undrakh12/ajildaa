@@ -63,11 +63,11 @@
                             </div>
                             <div class="company-input uk-margin-top">
                                 <h6 class="uk-card-title uk-text-bold uk-margin-small-bottom">Таны нэр</h6>
-                                <input class="uk-input" type="text">
+                                <input class="uk-input" type="text" value="{{ Auth::user()->name }}">
                             </div>
                             <div class="company-input uk-margin-top">
                                 <h6 class="uk-card-title uk-text-bold uk-margin-small-bottom">Утасны дугаар</h6>
-                                <input class="uk-input" type="number">
+                                <input class="uk-input" type="number" name="phonenumber">
                             </div>
                             <div class="company-input uk-margin-top">
                                 <h6 class="uk-card-title uk-text-bold uk-margin-small-bottom">Манай апп-н талаар хаанаас сонссон бэ?</h6>
