@@ -72,6 +72,7 @@
                                 <button class="uk-button uk-button-primary btn" id="third">Нэвтрэх</button>
                             </div>
                         </form>
+                        <p>Хэрвээ та бүртгэлгүй бол <a href="/register">энд</a> дарж бүртгүүлнэ үү.</p>
                     </div>
 
                 </div>

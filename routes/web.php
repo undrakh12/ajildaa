@@ -17,19 +17,28 @@ Route::get('/', function () {
 Route::get('/job', function () {
     return view('job');
 });
-Route::get('/apply', function () {
-    return view('apply');
-});
+
 Route::get('/result', function () {
     return view('search-result');
 });
 Route::get('/viewjob', function () {
     return view('view-job');
 });
-Route::get('/post-job', function () {
-    return view('post-job');
+
+
+
+Route:group(['middleware' => ['auth']], function() {
+    Route::get('/profile', function () {
+        return view('user');
+    });
+
+    Route::get('/post-job', function () {
+        return view('post-job');
+    });
+
+    Route::get('/apply', function () {
+        return view('apply');
+    });
 });
 
 Auth::routes();
-
-Route::get('/home', 'HomeController@index');

@@ -2,7 +2,7 @@
 <html lang="mn">
 
 <head>
-	<title>Ажилдаа</title>
+	<title>Ажилдаа!</title>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -119,7 +119,7 @@
 										</h5>
 									</a>
 									@else
-									<a href="/">
+									<a href="/profile">
 										<h5>
 											<span class="uk-margin-small-right" uk-icon="user"></span>
 											{{ Auth::user()->email }}
