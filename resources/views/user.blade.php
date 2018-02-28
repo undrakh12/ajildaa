@@ -22,7 +22,7 @@
                 <a href="{{ URL::previous() }}" class="uk-margin-small-left" uk-icon="arrow-left"></a>
                 <ul class="uk-navbar-nav">
                     <li class="uk-active">
-                        <a>Ажил хайх</a>
+                        <a href="/">Ажил хайх</a>
                     </li>
                 </ul>
             </div>

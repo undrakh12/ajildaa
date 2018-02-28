@@ -64,6 +64,7 @@
                             <div class="company-input uk-margin-top">
                                 <h6 class="uk-card-title uk-text-bold uk-margin-small-bottom">Таны нэр</h6>
                                 <input class="uk-input" type="text" value="{{ Auth::user()->name }}">
+                                <h4>{{ Auth::user()->type }}</h4>
                             </div>
                             <div class="company-input uk-margin-top">
                                 <h6 class="uk-card-title uk-text-bold uk-margin-small-bottom">Утасны дугаар</h6>

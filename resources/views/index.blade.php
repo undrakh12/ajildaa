@@ -137,7 +137,7 @@
 								<li class="uk-padding uk-padding-small uk-padding-remove-top">
 									<div class="uk-clearfix post-link">
 										<div class="uk-float-left">
-											<a href="/post-job">
+											<a href="/job">
 												<h5>
 													<span class="uk-margin-small-right" uk-icon="bell"></span>Ажил Нийтлэх</h5>
 											</a>

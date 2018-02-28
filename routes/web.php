@@ -19,20 +19,20 @@ Route::get('/result', function () {
     return view('search-result');
 });
 
+//зөвхөн нэвтэрсэн хэрэглэгч хандах route
 Route::group(['middleware' => ['auth']], function() {
     Route::get('/profile', function () {
         return view('user');
     });
-
+    
     Route::get('/apply', function () {
         return view('apply');
     });
 
-    Route::get('/post-job', function () {
-        return view('post-job');
-    });
-
-    Route::resource('job','JobController');
 });
 
+//employer хандах эрхтэй route
+Route::group(['middleware' => ['employer']], function() {
+    Route::resource('job','JobController');
+});
 Auth::routes();
