@@ -18,11 +18,11 @@
 
 <body>
     <main id="barba-wrapper">
-        <div class="barba-container" data-prev="/"  data-next="/job">
+        <div class="barba-container" data-prev="home"  data-next="/job">
             <header class="header" uk-sticky="top: 0">
                 <nav class="main-navbar uk-navbar-container" uk-navbar>
                     <div class="uk-navbar-left">
-                        <a href="/" class="uk-margin-small-left prev" uk-icon="arrow-left"></a>
+                        <a href="home" class="uk-margin-small-left prev" uk-icon="arrow-left"></a>
                         <ul class="uk-navbar-nav">
                             <li class="uk-active">
                                 <a>Ажил хайх</a>

@@ -5,7 +5,7 @@ namespace App\Http\Middleware;
 use Closure;
 use Auth;
 
-class isEmployer
+class IsStudent
 {
     /**
      * Handle an incoming request.
@@ -16,11 +16,11 @@ class isEmployer
      */
     public function handle($request, Closure $next)
     {
-        if ( Auth::user() && Auth::user()->type == 'employer') {
+        if (Auth::user() && Auth::user()->type == 'student') {
+            
             return $next($request);
         }
 
-        return redirect()->back();
-        
+        return view('login');
     }
 }
