@@ -19,28 +19,36 @@ Route::get('/result', function () {
     return view('search-result');
 });
 
-// qзөвхөн нэвтэрсэн хэрэглэгч хандах route
-Route::group(['middleware' => ['student']], function() {
-    Route::get('/profile', function () {
-        return view('user');
-    });
-
-    Route::get('/apply', function () {
-        return view('apply');
-    });
-
+Route::get('/view-job', function () {
+    return view('job');
 });
+
+Route::get('/apply', function () {
+    return view('apply');
+});
+
+// // qзөвхөн нэвтэрсэн хэрэглэгч хандах route
+// Route::group(['middleware' => ['student']], function() {
+//     Route::get('/profile', function () {
+//         return view('user');
+//     });
+
+//     Route::get('/apply', function () {
+//         return view('apply');
+//     });
+
+// });
 
 // employer хандах эрхтэй route
-Route::group(['middleware' => ['auth']], function() {
-    Route::get('/profile', function () {
-        return view('user');
-    });
+// Route::group(['middleware' => ['auth']], function() {
+//     Route::get('/profile', function () {
+//         return view('user');
+//     });
 
-    Route::get('/apply', function () {
-        return view('apply');
-    });
+//     Route::get('/apply', function () {
+//         return view('apply');
+//     });
 
-    Route::resource('job','JobController');
-});
+//     Route::resource('job','JobController');
+// });
 Auth::routes();

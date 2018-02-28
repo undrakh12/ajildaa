@@ -8,22 +8,22 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="theme-color" content="#000" />
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+
     <!-- CSS -->
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/uikit.min.css" />
+    <link rel="stylesheet" href="{{ asset('css/main.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/uikit.min.css') }}">
 
-    <link rel="manifest" href="/manifest.json"/>
+    <!-- manifest -->
+    <link rel="manifest" href="{{ asset('/manifest.json') }}">
 
-    <script src="js/jquery.min.js"></script>
+    <!-- jQuery -->
+    <script src="{{ asset('js/jquery.min.js') }}"></script>
 </head>
 <body>
 
     @yield('content')
     
-    <!-- JS -->
-    <script src="js/uikit.min.js"></script>
-    <script src="js/uikit-icons.min.js"></script>
-    <script type="js/app.js" async></script>
+    <!-- get android next button with jquery -->
     <script>
         (function ($) {
             $.fn.enterAsTab = function (options) {
@@ -61,9 +61,14 @@
         $("#form").enterAsTab({ 'allowSubmit': true });
     </script>
 
+    <!-- main JS -->
+    <script src="{{ asset('js/uikit.min.js') }}"></script>
+    <script src="{{ asset('js/uikit-icons.min.js') }}"></script>
+    <script src="{{ asset('js/app.js') }}" async></script>
+    
     <!-- barba.js -->
-    <script src="js/barba.js"></script>
-    <script src="js/nextprev.js"></script>
-    <script src="js/TweenMax.min.js"></script>
+    <script src="{{ asset('js/barba.js') }}"></script>
+    <script src="{{ asset('js/nextprev.js') }}"></script>
+    <script src="{{ asset('js/TweenMax.min.js') }}"></script>
 </body>
 </html>

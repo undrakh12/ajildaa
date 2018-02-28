@@ -32,11 +32,20 @@ btn{
 	height: 45px;
 	background: #000000 !important;	
 }
+
+	.main-navbar .arrow-left{
+		height: 20px !important;
+	}
+
+	.main-navbar .home{
+		height: 20px !important;
+	}
 	
 	.main-navbar a{
 		color: #fff !important;
 		text-transform: capitalize !important;
 		font-size: 16px !important;
+		height: 100% !important;
 	}
 
 .logo {
