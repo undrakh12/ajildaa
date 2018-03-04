@@ -42,7 +42,7 @@ class JobController extends Controller
     public function store(Request $request)
     {   
         $job = Job::create($request->all());
-        return redirect()->route('home');
+        return redirect('/result');
     }
 
     /**
@@ -96,8 +96,8 @@ class JobController extends Controller
         // foreach ($jobs as $job) {
         //     $postedDate = $job->created_at;
         // }
-        echo "JSON butsaaj baina shvv Nasaa :P";
-        dd(json_encode($jobs));
+        // echo "JSON butsaaj baina shvv Nasaa :P";
+        // dd(json_encode($jobs));
 
         return view('search-result')->with('jobs', $jobs);
     }

@@ -50,7 +50,7 @@
 
 									<div class="third-section uk-margin-medium-top">
 
-										<a href="/result" class="uk-button uk-button-primary btn next" id="third">Цагийн ажил хайх</a>
+										<a href="/result" class="uk-button uk-button-primary btn next" id="third">Aжил хайх</a>
 									</div>
 								<!-- </form> -->
 							</div>
@@ -116,6 +116,7 @@
 										</div>
 									</div>
 								</li>
+								
 								<li class="uk-padding uk-padding-small uk-padding-remove-top">
 									<div class="uk-clearfix post-link">
 										<div class="uk-float-left">
@@ -130,6 +131,7 @@
 
 									</div>
 								</li>
+								
 							</ul>
 
 							<div class="footer-section uk-padding uk-padding-small">
