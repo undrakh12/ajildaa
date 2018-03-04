@@ -93,12 +93,12 @@ class JobController extends Controller
     public function showResult()
     {
         $jobs = Job::all();
-        foreach ($jobs as $job) {
-            $postedDate = $job->created_at;
-        }
-        
-        //dd($jobs,$postedDate);
+        // foreach ($jobs as $job) {
+        //     $postedDate = $job->created_at;
+        // }
+        echo "JSON butsaaj baina shvv Nasaa :P";
+        dd(json_encode($jobs));
 
-        return view('search-result')->with(array('jobs', $jobs));
+        return view('search-result')->with('jobs', $jobs);
     }
 }
