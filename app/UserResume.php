@@ -14,11 +14,4 @@ class UserResume extends Model
 
         return $this->hasMany('App\Resume\Experience','work_exp_id');
     }
-
-    public function getResume() {
-
-        $resume = UserResume::get();
-
-        return view('resume', compact('resume'));
-    }
 }

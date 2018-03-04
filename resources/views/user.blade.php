@@ -39,11 +39,9 @@
                                 </div>
                             </div>
                             <div class="uk-text-center uk-padding">
-                                <a href="{{ route('logout') }}"
-                                onclick="event.preventDefault();
-                                        document.getElementById('logout-form').submit();" class="uk-button uk-button-primary btn">Гарах</a>
-                                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST">
                                     {{ csrf_field() }}
+                                    <button type="submit" class="uk-button uk-button-primary btn">Гарах</button>
                                 </form>
                             </div>
 

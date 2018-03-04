@@ -7,14 +7,16 @@ use Illuminate\Database\Eloquent\Model;
 class Company extends Model
 {
 	protected $table = "companies";
+
     protected $fillable = [
-    	'company_name','company_size','company_phone','company_location','employer_id'
+    	'company_name','company_size','company_phone','company_location','user_id'
     ];
 
-    public function jobs() {
+    public function job() {
     	return $this->hasMany('App\Job');
     }
-    public function employer() {
-    	return $this->belongsTo('App\User');
+
+    public function user() {
+    	return $this->belongsTo('App\User','user_id');
     }
 }

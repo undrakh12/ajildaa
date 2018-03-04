@@ -8,9 +8,13 @@ class Job extends Model
 {
     protected $table = "jobs";
 
-    protected $fillable = ['','','',''];
+    protected $fillable = [
+    	'job_name','job_location','job_salary','job_slot','job_additional','company_id'
+    ];
 
-    public function postJob() {
-        $this->save();
+    public $timestamps = true;
+
+    public function company() {
+    	return $this->belongsTo('App\Company');
     }
 }

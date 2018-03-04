@@ -27,7 +27,8 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
 
-    public function job() {
-        $this->hasMany('App\Job', 'job_id');
+    public function company() {
+        //echo 'this is in user model';die;
+        return $this->hasMany('App\Company');
     }
 }

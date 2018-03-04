@@ -21,7 +21,7 @@ class IsEmployer
             return $next($request);
         }
 
-        return view('login');
+        return redirect('login');
         
     }
 }

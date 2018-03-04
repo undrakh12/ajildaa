@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Job;
+use App\Company;
+use App\User;
 
 class JobController extends Controller
 {
@@ -14,7 +16,11 @@ class JobController extends Controller
      */
     public function index()
     {
-        return view('post-job');
+        $user_id = auth()->user()->id;
+        
+        $companies = User::find($user_id)->company;
+
+        return view('post-job')->with('companies', $companies);
     }
 
     /**
@@ -34,9 +40,9 @@ class JobController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
-    {
-        $job = new Job();
-        $job->postJob();
+    {   
+        $job = Job::create($request->all());
+        return redirect()->route('home');
     }
 
     /**
@@ -82,5 +88,17 @@ class JobController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function showResult()
+    {
+        $jobs = Job::all();
+        foreach ($jobs as $job) {
+            $postedDate = $job->created_at;
+        }
+        
+        //dd($jobs,$postedDate);
+
+        return view('search-result')->with(array('jobs', $jobs));
     }
 }

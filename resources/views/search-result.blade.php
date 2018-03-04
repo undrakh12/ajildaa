@@ -53,11 +53,12 @@
                         <ul id="my-id" class="uk-switcher">
                             <li class="all-result">
                                 <ul class="uk-list uk-list-divider">
+                                    @foreach($jobs as $job)
                                     <li class="uk-padding uk-padding-small">
                                         <div class="uk-clearfix">
                                             <div class="uk-float-left job-list">
                                                 <a href="/view-job" class="next">
-                                                    <h5>Зөөгчийн ажил</h5>
+                                                    <h5>{{ $job->job_name }}</h5>
                                                     <h6>Монгол хуушуур
                                                         <span uk-icon="star"></span>
                                                         <span uk-icon="star"></span>
@@ -65,7 +66,7 @@
                                                         <span uk-icon="star"></span>
                                                         <span uk-icon="star"></span>
                                                     </h6>
-                                                    <h6>Баянзүрх дүүрэг, Улаанбаатар</h6>
+                                                    <h6>{{ $job->job_location }}</h6>
                                                     <h6 class="days">30 өдрийн өмнө</h6>
                                                 </a>
                                             </div>
@@ -75,95 +76,8 @@
 
                                         </div>
                                     </li>
-
-                                    <li class="uk-padding uk-padding-small">
-                                        <div class="uk-clearfix">
-                                            <div class="uk-float-left job-list">
-                                                <a href="job.html">
-                                                    <h5>Зөөгчийн ажил</h5>
-                                                    <h6>Монгол хуушуур
-                                                        <span uk-icon="star"></span>
-                                                        <span uk-icon="star"></span>
-                                                        <span uk-icon="star"></span>
-                                                        <span uk-icon="star"></span>
-                                                        <span uk-icon="star"></span>
-                                                    </h6>
-                                                    <h6>Баянзүрх дүүрэг, Улаанбаатар</h6>
-                                                    <h6 class="days">30 өдрийн өмнө</h6>
-                                                </a>
-                                            </div>
-                                            <div class="uk-float-right">
-                                                <a class="uk-margin-small-right" uk-icon="heart"></a>
-                                            </div>
-
-                                        </div>
-                                    </li>
-                                    <li class="uk-padding uk-padding-small">
-                                        <div class="uk-clearfix">
-                                            <div class="uk-float-left job-list">
-                                                <a href="job.html">
-                                                    <h5>Зөөгчийн ажил</h5>
-                                                    <h6>Монгол хуушуур
-                                                        <span uk-icon="star"></span>
-                                                        <span uk-icon="star"></span>
-                                                        <span uk-icon="star"></span>
-                                                        <span uk-icon="star"></span>
-                                                        <span uk-icon="star"></span>
-                                                    </h6>
-                                                    <h6>Баянзүрх дүүрэг, Улаанбаатар</h6>
-                                                    <h6 class="days">30 өдрийн өмнө</h6>
-                                                </a>
-                                            </div>
-                                            <div class="uk-float-right">
-                                                <a class="uk-margin-small-right" uk-icon="heart"></a>
-                                            </div>
-
-                                        </div>
-                                    </li>
-                                    <li class="uk-padding uk-padding-small">
-                                        <div class="uk-clearfix">
-                                            <div class="uk-float-left job-list">
-                                                <a href="job.html">
-                                                    <h5>Зөөгчийн ажил</h5>
-                                                    <h6>Монгол хуушуур
-                                                        <span uk-icon="star"></span>
-                                                        <span uk-icon="star"></span>
-                                                        <span uk-icon="star"></span>
-                                                        <span uk-icon="star"></span>
-                                                        <span uk-icon="star"></span>
-                                                    </h6>
-                                                    <h6>Баянзүрх дүүрэг, Улаанбаатар</h6>
-                                                    <h6 class="days">30 өдрийн өмнө</h6>
-                                                </a>
-                                            </div>
-                                            <div class="uk-float-right">
-                                                <a class="uk-margin-small-right" uk-icon="heart"></a>
-                                            </div>
-
-                                        </div>
-                                    </li>
-                                    <li class="uk-padding uk-padding-small">
-                                        <div class="uk-clearfix">
-                                            <div class="uk-float-left job-list">
-                                                <a href="job.html">
-                                                    <h5>Зөөгчийн ажил</h5>
-                                                    <h6>Монгол хуушуур
-                                                        <span uk-icon="star"></span>
-                                                        <span uk-icon="star"></span>
-                                                        <span uk-icon="star"></span>
-                                                        <span uk-icon="star"></span>
-                                                        <span uk-icon="star"></span>
-                                                    </h6>
-                                                    <h6>Баянзүрх дүүрэг, Улаанбаатар</h6>
-                                                    <h6 class="days">30 өдрийн өмнө</h6>
-                                                </a>
-                                            </div>
-                                            <div class="uk-float-right">
-                                                <a class="uk-margin-small-right" uk-icon="heart"></a>
-                                            </div>
-
-                                        </div>
-                                    </li>
+                                    @endforeach
+                                    
 
                                     <li class="uk-padding uk-padding-large uk-text-center">
                                         <button class="uk-button uk-button-primary">Дэлгэрэнгүй...</button>

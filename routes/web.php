@@ -13,15 +13,11 @@
 
 Route::get('/home', function () {
     return view('index');
-});
+})->name('home');
 
-Route::get('/result', function () {
-    return view('search-result');
-});
+Route::get('/result', 'JobController@showResult');
 
-Route::get('/view-job', function () {
-    return view('job');
-});
+Route::get('/view-job', 'JobController@showJobDetail');
 
 Route::get('/apply', function () {
     return view('apply');
@@ -39,16 +35,12 @@ Route::get('/apply', function () {
 
 // });
 
-// employer хандах эрхтэй route
-// Route::group(['middleware' => ['auth']], function() {
-//     Route::get('/profile', function () {
-//         return view('user');
-//     });
+// Нэвтэрсэн хэрэглэгч хандах эрхтэй route
+Route::group(['middleware' => ['auth']], function() {
+    Route::get('/profile', function () {
+        return view('user');
+    });
 
-//     Route::get('/apply', function () {
-//         return view('apply');
-//     });
-
-//     Route::resource('job','JobController');
-// });
+    Route::resource('job','JobController');
+});
 Auth::routes();
