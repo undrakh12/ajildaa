@@ -10,8 +10,11 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/', function() {
+	return redirect()->route('home');
+});
 
-Route::get('/home', function () {
+Route::get('/home', function() {
     return view('index');
 })->name('home');
 
@@ -19,7 +22,7 @@ Route::get('/result', 'JobController@showResult');
 
 Route::get('/view-job', 'JobController@showJobDetail');
 
-Route::get('/apply', function () {
+Route::get('/apply', function() {
     return view('apply');
 });
 
@@ -42,5 +45,7 @@ Route::group(['middleware' => ['auth']], function() {
     });
 
     Route::resource('job','JobController');
+
+    Route::post('/logout','Auth\AuthController@logout');
 });
 Auth::routes();
