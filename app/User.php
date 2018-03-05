@@ -28,7 +28,10 @@ class User extends Authenticatable
     ];
 
     public function company() {
-        //echo 'this is in user model';die;
         return $this->hasMany('App\Company');
+    }
+
+    public function resume() {
+        return $this->hasMany('App\Resume');
     }
 }

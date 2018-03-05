@@ -38,17 +38,54 @@
                                     <span>Хэрэглэгчийн төрөл : {{ Auth::user()->type }}</span>
                                 </div>
                             </div>
+                            <a href="/resume">Миний анкет</a>
                             <div class="uk-text-center uk-padding">
                                 <form id="logout-form" action="{{ route('logout') }}" method="POST">
                                     {{ csrf_field() }}
                                     <button type="submit" class="uk-button uk-button-primary btn">Гарах</button>
                                 </form>
                             </div>
-
                         </div>
-
-
                     </div>
+                    <h4>Хадгалсан зарууд</h4>
+                    <ul class="uk-list uk-list-divider" style="background-color: #fff">
+                        <li class="uk-padding uk-padding-small">
+                            <div class="uk-clearfix">
+                                <div class="uk-float-left job-list">
+                                    <a href="/view-job" class="next">
+                                        <h5>job->job_name </h5>
+                                        <h6>Монгол хуушуур
+                                            <span uk-icon="star"></span>
+                                            <span uk-icon="star"></span>
+                                            <span uk-icon="star"></span>
+                                            <span uk-icon="star"></span>
+                                            <span uk-icon="star"></span>
+                                        </h6>
+                                        <h6>job->job_location</h6>
+                                        <h6 class="days"> $job->created_at </h6>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="uk-padding uk-padding-small">
+                            <div class="uk-clearfix">
+                                <div class="uk-float-left job-list">
+                                    <a href="/view-job" class="next">
+                                        <h5>job->job_name </h5>
+                                        <h6>Монгол хуушуур
+                                            <span uk-icon="star"></span>
+                                            <span uk-icon="star"></span>
+                                            <span uk-icon="star"></span>
+                                            <span uk-icon="star"></span>
+                                            <span uk-icon="star"></span>
+                                        </h6>
+                                        <h6>job->job_location</h6>
+                                        <h6 class="days"> $job->created_at </h6>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </section>
         </div>

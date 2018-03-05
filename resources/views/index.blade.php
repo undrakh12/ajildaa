@@ -23,16 +23,15 @@
 							<div class="head-section ">
 								<img src="images/logo.png" class="uk-responsive-width logo" alt="" uk-responsive>
 							</div>
-
 							<div class="search-section uk-margin-top">
-								<!-- <form action="/result" id="form"> -->
+								<form action="/result" id="form">
 									<div class="first-search-section">
 										<h6 class="uk-margin-small-bottom h6-title uk-margin-left uk-text-left">
 											<strong>ЮУ</strong> ажлын нэр, үг, эсвэл компани</h6>
 										<div class="uk-margin uk-margin-remove-top">
 											<div class="uk-inline search-inline">
 												<a class="uk-form-icon uk-form-icon-flip" href="#" uk-icon="icon: search"></a>
-												<input class="search-input uk-input" type="text" id="first" data-dependency="second">
+												<input class="search-input uk-input" type="text" id="first" data-dependency="second" name="job_name">
 											</div>
 										</div>
 									</div>
@@ -49,10 +48,9 @@
 									</div>
 
 									<div class="third-section uk-margin-medium-top">
-
-										<a href="/result" class="uk-button uk-button-primary btn next" id="third">Aжил хайх</a>
+										<button type="submit" class="uk-button uk-button-primary btn">Aжил хайх</button>
 									</div>
-								<!-- </form> -->
+								</form>
 							</div>
 
 						</div>
@@ -103,7 +101,7 @@
 												</h5>
 											</a>
 											@else
-											<a href="/profile">
+											<a href="/user">
 												<h5>
 													<span class="uk-margin-small-right" uk-icon="user"></span>
 													{{ Auth::user()->email }}

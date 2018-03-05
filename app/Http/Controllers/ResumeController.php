@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\User;
+use App\Resume;
 
 class ResumeController extends Controller
 {
@@ -13,7 +15,14 @@ class ResumeController extends Controller
      */
     public function index()
     {
-        //
+        $user_id = auth()->user()->id;
+        $resume = User::find($user_id)->resume;
+
+        if($resume == null){
+            return redirect()->route('resume.create');
+        }
+
+        return view('resume.index')->with('resume', $resume);
     }
 
     /**
@@ -23,7 +32,7 @@ class ResumeController extends Controller
      */
     public function create()
     {
-        //
+        return view('resume.create');
     }
 
     /**
@@ -34,7 +43,8 @@ class ResumeController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $resume = Resume::create($request->all());
+        return redirect()->route('resume.index');
     }
 
     /**
@@ -56,7 +66,9 @@ class ResumeController extends Controller
      */
     public function edit($id)
     {
-        //
+        $resume = Resume::find($id);
+
+        return view('resume.edit')->with('resume', $resume);
     }
 
     /**
@@ -68,7 +80,10 @@ class ResumeController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $resume = Resume::find($id);
+        $resume->update($request->all());
+
+        return redirect()->route('resume.index');
     }
 
     /**

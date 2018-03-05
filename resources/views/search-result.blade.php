@@ -57,7 +57,7 @@
                                     <li class="uk-padding uk-padding-small">
                                         <div class="uk-clearfix">
                                             <div class="uk-float-left job-list">
-                                                <a href="/view-job" class="next">
+                                                <a href="/job/{{ $job->id }}" class="next">
                                                     <h5>{{ $job->job_name }}</h5>
                                                     <h6>Монгол хуушуур
                                                         <span uk-icon="star"></span>
@@ -67,7 +67,7 @@
                                                         <span uk-icon="star"></span>
                                                     </h6>
                                                     <h6>{{ $job->job_location }}</h6>
-                                                    <h6 class="days">30 өдрийн өмнө</h6>
+                                                    <h6 class="days">{{ $job->created_at }}</h6>
                                                 </a>
                                             </div>
                                             <div class="uk-float-right">
@@ -77,8 +77,6 @@
                                         </div>
                                     </li>
                                     @endforeach
-                                    
-
                                     <li class="uk-padding uk-padding-large uk-text-center">
                                         <button class="uk-button uk-button-primary">Дэлгэрэнгүй...</button>
                                     </li>
@@ -93,11 +91,12 @@
 
                             <li class="all-result new-result">
                                 <ul class="uk-list uk-list-divider">
+                                @foreach($latest as $latest_job)
                                     <li class="uk-padding uk-padding-small">
                                         <div class="uk-clearfix">
                                             <div class="uk-float-left job-list">
                                                 <a href="">
-                                                    <h5>Админ, Номын санч </h5>
+                                                    <h5>{{ $latest_job->job_name }}</h5>
                                                     <h6>Монгол бууз
                                                         <span uk-icon="star"></span>
                                                         <span uk-icon="star"></span>
@@ -105,8 +104,8 @@
                                                         <span uk-icon="star"></span>
                                                         <span uk-icon="star"></span>
                                                     </h6>
-                                                    <h6>Хан уул дүүрэг, Улаанбаатар</h6>
-                                                    <h6 class="days">2 цагийн өмнө</h6>
+                                                    <h6>{{ $latest_job->job_location }}</h6>
+                                                    <h6 class="days">{{ $latest_job->created_at }}</h6>
                                                 </a>
                                             </div>
                                             <div class="uk-float-right">
@@ -115,50 +114,7 @@
 
                                         </div>
                                     </li>
-                                    <li class="uk-padding uk-padding-small">
-                                        <div class="uk-clearfix">
-                                            <div class="uk-float-left job-list">
-                                                <a href="">
-                                                    <h5>Админ, Номын санч </h5>
-                                                    <h6>Монгол бууз
-                                                        <span uk-icon="star"></span>
-                                                        <span uk-icon="star"></span>
-                                                        <span uk-icon="star"></span>
-                                                        <span uk-icon="star"></span>
-                                                        <span uk-icon="star"></span>
-                                                    </h6>
-                                                    <h6>Хан уул дүүрэг, Улаанбаатар</h6>
-                                                    <h6 class="days">2 цагийн өмнө</h6>
-                                                </a>
-                                            </div>
-                                            <div class="uk-float-right">
-                                                <a class="uk-margin-small-right" uk-icon="heart"></a>
-                                            </div>
-
-                                        </div>
-                                    </li>
-                                    <li class="uk-padding uk-padding-small">
-                                        <div class="uk-clearfix">
-                                            <div class="uk-float-left job-list">
-                                                <a href="">
-                                                    <h5>Админ, Номын санч </h5>
-                                                    <h6>Монгол бууз
-                                                        <span uk-icon="star"></span>
-                                                        <span uk-icon="star"></span>
-                                                        <span uk-icon="star"></span>
-                                                        <span uk-icon="star"></span>
-                                                        <span uk-icon="star"></span>
-                                                    </h6>
-                                                    <h6>Хан уул дүүрэг, Улаанбаатар</h6>
-                                                    <h6 class="days">2 цагийн өмнө</h6>
-                                                </a>
-                                            </div>
-                                            <div class="uk-float-right">
-                                                <a class="uk-margin-small-right" uk-icon="heart"></a>
-                                            </div>
-
-                                        </div>
-                                    </li>
+                                @endforeach
                                     <li class="uk-padding uk-padding-large uk-text-center">
                                         <button class="uk-button uk-button-primary push-but">Ажлын мэдээллээ цаг алдалгүй ав</button>
                                     </li>

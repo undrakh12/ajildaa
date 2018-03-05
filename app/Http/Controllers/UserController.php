@@ -3,11 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Job;
-use App\Company;
-use App\User;
 
-class JobController extends Controller
+class UserController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,10 +13,7 @@ class JobController extends Controller
      */
     public function index()
     {
-        $user_id = auth()->user()->id;
-        $companies = User::find($user_id)->company;
-        //dd($companies);
-        return view('post-job')->with('companies', $companies);
+        return view('user');
     }
 
     /**
@@ -40,8 +34,7 @@ class JobController extends Controller
      */
     public function store(Request $request)
     {
-        $job = Job::create($request->all());
-        return redirect('/result');
+        //
     }
 
     /**
@@ -52,9 +45,7 @@ class JobController extends Controller
      */
     public function show($id)
     {
-        $job = Job::find($id);
-
-        return view('job.index')->with('job', $job);
+        //
     }
 
     /**
@@ -89,26 +80,5 @@ class JobController extends Controller
     public function destroy($id)
     {
         //
-    }
-
-    public function showResult(Request $request)
-    {
-        $jobs = Job::where('job_name','LIKE','%'.$request->job_name.'%')
-                        ->orderBy('created_at','desc')
-                        ->paginate(10);
-        // $jobs = Company::with('job')->whereHas('job',function ($query) use($request)
-        //     {
-        //         $query->where('job_name','LIKE','%'.$request->job_name.'%');
-        //     })->get();
-        
-        $latest_jobs = Job::where('job_name','LIKE','%'.$request->job_name.'%')
-                        ->orderBy('created_at','desc')
-                        ->paginate(10);
-
-        return view('search-result')
-                        ->with(array(
-                        'latest' => $latest_jobs,
-                        'jobs' => $jobs
-                        ));
     }
 }
