@@ -82,7 +82,7 @@
 								<li class="uk-padding uk-padding-small uk-padding-remove-top">
 									<div class="uk-clearfix">
 										<div class="uk-float-left">
-											<a href="/viewjob">
+											<a href="/resume">
 												<h5>
 													<span class="uk-margin-small-right" uk-icon="nut"></span>Миний Анкет</h5>
 											</a>
