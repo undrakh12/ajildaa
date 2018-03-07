@@ -15,7 +15,6 @@
 
     <link rel="manifest" href="/manifest.json"/>
 
-    <script src="js/jquery.min.js"></script>
 </head>
 
 <body>
@@ -86,120 +85,6 @@
 
     <script src="js/app.js" async></script>
 
-    <!-- <script>
-        document.getElementsByClassName('post-link')[0]
-            .addEventListener('click', function (event) {
-                window.location.href = "post-job.html";
-            });
-    </script> -->
-    <script>
-        (function ($) {
-            $.fn.enterAsTab = function (options) {
-                var settings = $.extend({
-                    'allowSubmit': false
-                }, options);
-                $(this).find('input, button').live("keydown", { localSettings: settings }, function (event) {
-                    if (settings.allowSubmit) {
-                        var type = $(this).attr("type");
-                        if (type == "submit") {
-                            return true;
-                        }
-                    }
-                    if (event.keyCode == 13) {
-                        var inputs = $(this).parents("form").eq(0).find(":input:visible:not(:disabled):not([readonly])");
-                        var idx = inputs.index(this);
-                        if (idx == inputs.length - 1) {
-                            idx = -1;
-                        } else {
-                            inputs[idx + 1].focus(); // handles submit buttons
-                        }
-                        try {
-                            inputs[idx + 1].select();
-                        }
-                        catch (err) {
-
-                        }
-                        return false;
-                    }
-                });
-                return this;
-            };
-        })(jQuery);
-
-        $("#form").enterAsTab({ 'allowSubmit': true });
-    </script>
 </body>
 
 </html>
-
-{{--
-@extends('layouts.app')
-
-@section('content')
-<div class="container">
-    <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-            <div class="panel panel-default">
-                <div class="panel-heading">Login</div>
-
-                <div class="panel-body">
-                    <form class="form-horizontal" method="POST" action="{{ route('login') }}">
-                        {{ csrf_field() }}
-
-                        <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
-                            <label for="email" class="col-md-4 control-label">E-Mail Address</label>
-
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required autofocus>
-
-                                @if ($errors->has('email'))
-                                    <span class="help-block">
-                                        <strong>buruu email</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
-                        <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
-                            <label for="password" class="col-md-4 control-label">Password</label>
-
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control" name="password" required>
-
-                                @if ($errors->has('password'))
-                                    <span class="help-block">
-                                        <strong>buruu password</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="col-md-6 col-md-offset-4">
-                                <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> Remember Me
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="col-md-8 col-md-offset-4">
-                                <button type="submit" class="btn btn-primary">
-                                    Login
-                                </button>
-
-                                <a class="btn btn-link" href="{{ route('password.request') }}">
-                                    Forgot Your Password?
-                                </a>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-@endsection
---}}

@@ -15,7 +15,6 @@
 
     <link rel="manifest" href="/manifest.json"/>
 
-    <script src="js/jquery.min.js"></script>
 </head>
 
 <body>
