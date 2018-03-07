@@ -77,6 +77,7 @@
 
 									</div>
 								</li>
+								@if(Auth::user()->type == 'student')
 								<li class="uk-padding uk-padding-small uk-padding-remove-top">
 									<div class="uk-clearfix">
 										<div class="uk-float-left">
@@ -91,6 +92,7 @@
 
 									</div>
 								</li>
+								@endif
 								<li class="uk-padding uk-padding-small uk-padding-remove-top">
 									<div class="uk-clearfix">
 										<div class="uk-float-left">

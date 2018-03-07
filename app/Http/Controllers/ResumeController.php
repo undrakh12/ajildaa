@@ -18,7 +18,7 @@ class ResumeController extends Controller
         $user_id = auth()->user()->id;
         $resume = User::find($user_id)->resume;
 
-        if($resume == null){
+        if($resume == ''){
             return redirect()->route('resume.create');
         }
 
