@@ -22,6 +22,5 @@ class IsEmployer
         }
 
         return redirect('login');
-        
     }
 }

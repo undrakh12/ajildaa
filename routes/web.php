@@ -17,14 +17,14 @@ Route::get('/home', function() {
     return view('index');
 })->name('home');
 Route::get('/result', 'JobController@showResult');
-Route::get('/apply', function() {
-    return view('apply');
-});
-// Нэвтэрсэн хэрэглэгч хандах эрхтэй route
+
 Route::group(['middleware' => ['auth']], function() {
     Route::resource('user', 'UserController');
     Route::resource('job', 'JobController');
     Route::resource('resume', 'ResumeController');
+    Route::resource('apply', 'ApplyController');
+    Route::get('/user/jobs', 'ApplyController@showAppliedJobs');
+    Route::get('/applications', 'ApplyController@showReceivedApplication');
     Route::post('/logout','Auth\AuthController@logout');
 });
 Auth::routes();

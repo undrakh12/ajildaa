@@ -129,7 +129,6 @@
 
 									</div>
 								</li>
-								
 							</ul>
 
 							<div class="footer-section uk-padding uk-padding-small">

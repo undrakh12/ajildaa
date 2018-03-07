@@ -38,7 +38,12 @@
                                     <span>Хэрэглэгчийн төрөл : {{ Auth::user()->type }}</span>
                                 </div>
                             </div>
+                            @if(Auth::user()->type == 'student')
                             <a href="/resume">Миний анкет</a>
+                            @endif
+                            @if(Auth::user()->type == 'employer')
+                            <a href="/applications">Ирсэн хүсэлтүүдийг харах</a>
+                            @endif
                             <div class="uk-text-center uk-padding">
                                 <form id="logout-form" action="{{ route('logout') }}" method="POST">
                                     {{ csrf_field() }}

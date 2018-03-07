@@ -67,10 +67,14 @@
 
                     </div>
                 </div>
-
-                <div class="uk-padding ">
-                    <a href="/apply" class="uk-button uk-button-primary btn next">Ажилд орох</a>
-                </div>
+                <form action="/apply" method="POST">
+                    {{ csrf_field() }}
+                    <input type="hidden" name="user_id" value="{{ Auth::user()->id }}">
+                    <input type="hidden" name="job_id" value="{{ $job->id }}">
+                    <div class="uk-padding ">
+                        <button class="uk-button uk-button-primary btn next">Ажилд орох хүсэлт илгээх</button>
+                    </div>
+                </form>
 
             </section>
 
