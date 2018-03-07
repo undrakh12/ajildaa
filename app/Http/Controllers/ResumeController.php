@@ -55,7 +55,9 @@ class ResumeController extends Controller
      */
     public function show($id)
     {
-        
+        $resume = Resume::find($id);
+
+        return view('resume.index')->with('resume', $resume);
     }
 
     /**
