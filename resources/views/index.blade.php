@@ -77,6 +77,7 @@
 
 									</div>
 								</li>
+								@auth
 								@if(Auth::user()->type == 'student')
 								<li class="uk-padding uk-padding-small uk-padding-remove-top">
 									<div class="uk-clearfix">
@@ -93,6 +94,7 @@
 									</div>
 								</li>
 								@endif
+								@endauth
 								<li class="uk-padding uk-padding-small uk-padding-remove-top">
 									<div class="uk-clearfix">
 										<div class="uk-float-left">
