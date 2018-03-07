@@ -49,7 +49,7 @@
                                         <textarea class="uk-textarea" rows="5" name="additional"></textarea>
                                     </div>
                                     <input type="hidden" name="user_id" value="{{ Auth::user()->id }}">
-                                    <button type="submit" class="uk-button uk-button-primary btn">Засах</button>
+                                    <button type="submit" class="uk-button uk-button-primary btn">Оруулах</button>
                                 </div>
                             </form>
                         </div>
