@@ -198,3 +198,7 @@ btn{
 .full-modal {
 	height: 100%;
 }
+
+.login{
+	margin-top: 25px !important;
+}

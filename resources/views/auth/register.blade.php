@@ -22,7 +22,7 @@
     <header class="header" uk-sticky="top: 0">
         <nav class="main-navbar uk-navbar-container" uk-navbar>
             <div class="uk-navbar-left">
-                <a href="{{ URL::previous() }}" class="uk-margin-small-left" uk-icon="arrow-left"></a>
+                <a href="/home" class="uk-margin-small-left login" uk-icon="arrow-left"></a>
                 <ul class="uk-navbar-nav">
                     <li class="uk-active">
                         <a>Ажил хайх</a>
@@ -46,12 +46,11 @@
                         <form action="{{ route('register') }}" id="form" method="POST">
                             {{ csrf_field() }}
                             <div class="first-search-section">
-                                <h6 class="uk-margin-small-bottom h6-title uk-margin-left uk-text-left">
-                                    <strong>Би бол</strong></h6>
-                                <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
-                                    <label><input class="uk-radio" type="radio" name="type" value="student" checked>Оюутан</label>
-                                    <label><input class="uk-radio" type="radio" name="type" value="employer">Ажил олгогч</label>
-                                </div>
+                                <h6 class="uk-margin-medium-bottom h6-title uk-margin-left uk-text-left">
+                                    <strong>Би бол</strong>
+                                    <label><input class="uk-radio uk-margin-large-left" type="radio" name="type" value="student" checked> Оюутан</label>
+                                    <label><input class="uk-radio uk-margin-large-left" type="radio" name="type" value="employer"> Ажил олгогч</label>    
+                                </h6>
                             </div>
                             
                             <div class="first-search-section">
@@ -103,7 +102,7 @@
                                 <button class="uk-button uk-button-primary btn" id="third">Бүртгүүлэх</button>
                             </div>
                         </form>
-                        <p>Хэрвээ та бүртгэлтэй бол <a href="/register">энд</a> дарж нэвтэрнэ үү.</p>
+                        <p>Хэрвээ та бүртгэлтэй бол <a href="/login">энд</a> дарж нэвтэрнэ үү.</p>
                     </div>
 
                 </div>
