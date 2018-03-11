@@ -20,7 +20,7 @@
                 </nav>
             </header>
 
-            <section class="body apply-body">
+            <section class="body apply-body" uk-height-viewport="expand: true">
 
                 <div class="uk-container uk-container-center">
                     <div class="uk-grid-small uk-margin-top" uk-grid>
@@ -32,27 +32,32 @@
                             </div>
 
                             <div class="resume uk-margin-top">
-                                <div class="uk-card uk-card-default uk-card-body uk-width-1-2@m">
-                                    <h6 class="uk-card-title uk-text-bold">{{ Auth::user()->name }}</h6>
-                                    <span>И-мэйл : {{ Auth::user()->email }}</span>
-                                    <span>Хэрэглэгчийн төрөл : {{ Auth::user()->type }}</span>
+                                <div class="uk-card uk-card-default uk-card-body uk-width-1-2@m uk-box-shadow-medium">
+                                    <h5 class="uk-margin-small-bottom"><strong>Нэр: </strong>{{ Auth::user()->name }}</h5>
+                                    <h5 class="uk-margin-small-bottom"><strong>И-мэйл: </strong>{{ Auth::user()->email }}</h5>
+                                    <h5 class="uk-margin-small-bottom"><strong>Tөрөл: </strong>{{ Auth::user()->type }}</h5>
                                 </div>
                             </div>
-                            @if(Auth::user()->type == 'student')
-                            <a href="/resume">Миний анкет</a>
-                            @endif
-                            @if(Auth::user()->type == 'employer')
-                            <a href="/applications">Ирсэн хүсэлтүүдийг харах</a>
-                            @endif
+                            
                             <div class="uk-text-center uk-padding">
-                                <form id="logout-form" action="{{ route('logout') }}" method="POST">
-                                    {{ csrf_field() }}
-                                    <button type="submit" class="uk-button uk-button-primary btn">Гарах</button>
-                                </form>
+                                <div class="uk-clearfix">
+                                    @if(Auth::user()->type == 'student')
+                                    <a href="/resume" class="uk-button uk-button-primary uk-float-left btn2">Миний анкет</a>
+                                    @endif
+                                    @if(Auth::user()->type == 'employer')
+                                    <a href="/applications" class="uk-button uk-button-primary uk-float-left btn2">Ирсэн хүсэлтүүдийг харах</a>
+                                    @endif    
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="uk-float-right">
+                                        {{ csrf_field() }}
+                                        <button type="submit" class="uk-button uk-button-primary btn2">Гарах</button>
+                                    </form>
+                                </div>
+                                
+                                
                             </div>
                         </div>
                     </div>
-                    <h4>Хадгалсан зарууд</h4>
+                    <h4 class="uk-text-bold">Хадгалсан зарууд</h4>
                     <ul class="uk-list uk-list-divider" style="background-color: #fff">
                         <li class="uk-padding uk-padding-small">
                             <div class="uk-clearfix">

@@ -36,10 +36,16 @@ self.addEventListener('activate', function(e) {
 });
 
 self.addEventListener('fetch', (event) => {
-    
     event.respondWith(
-        caches.match(event.request).then(function(response) {
-            return response || fetch(event.request);
+        caches.open('offline').then(function(cache) {
+            return cache.match(event.request).then(function(response) {
+                var fetchPromise = fetch(event.request).then(function(networkResponse) {
+                    cache.put(event.request, networkResponse.clone());
+                    return networkResponse;
+                })
+                return response || fetchPromise
+            })
         })
     );
+    
 });

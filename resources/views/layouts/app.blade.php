@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="mn">
+<html lang="en">
 <head>
     <title>Ажилдаа!</title>
     <meta charset="utf-8">
