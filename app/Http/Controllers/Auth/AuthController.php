@@ -12,6 +12,6 @@ class AuthController extends Controller
     {
     	Auth::logout();
 
-    	return redirect('/home')->with('message', 'Logout хийгдлээ.');
+    	return redirect('/')->with('message', 'Logout хийгдлээ.');
     }
 }

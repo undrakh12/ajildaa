@@ -2,13 +2,13 @@
 
 @section('content')
 	<main id="barba-wrapper">
-      <div class="barba-container" data-prev="/home" data-next="/result">
+      <div class="barba-container" data-prev="/" data-next="/result">
 			<header class="header" uk-sticky="top: 0">
 				<nav class="main-navbar uk-navbar-container" uk-navbar>
 					<div class="uk-navbar-left">
 						<ul class="uk-navbar-nav">
 							<li class="uk-active">
-								<a href="/home" class="prev">Ажил хайх</a>
+								<a href="/" class="prev">Ажил хайх</a>
 							</li>
 						</ul>
 
