@@ -108,7 +108,7 @@
 											<a href="/user">
 												<h5>
 													<span class="uk-margin-small-right" uk-icon="user"></span>
-													{{ Auth::user()->email }}
+													<!-- {{ Auth::user()->email }} -->
 												</h5>
 											</a>
 											@endguest

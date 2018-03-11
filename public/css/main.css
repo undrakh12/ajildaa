@@ -1,7 +1,7 @@
-@font-face {
+/* @font-face {
     font-family: OpenSans;
-    src: url("../fonts/OpenSans-Regular.ttf");
-}
+    src: url("../fonts/OpenSans-Regular.woff");
+} */
 
 html,
 body {
@@ -50,10 +50,6 @@ btn{
 
 .logo {
 	width: 40%;
-}
-
-.h6-title {
-	font-size: 
 }
 
 .search-inline {
