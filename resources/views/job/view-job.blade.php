@@ -26,7 +26,7 @@
                         <div class="uk-width-1-1">
                             <div class="job-header">
                                 <div class="job-description uk-margin">
-                                    <h4 class="uk-text-bold">View your job</h4>
+                                    <h4 class="uk-text-bold">Ажлаа харах</h4>
                                     
                                 </div>
                             </div>

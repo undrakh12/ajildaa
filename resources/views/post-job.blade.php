@@ -64,7 +64,9 @@
                                         <h6 class="uk-text-bold uk-margin-bottom">Ажилд ороход юу, юу хэрэгтэй талаар мэдээлэл өгнө үү?</h6>
                                         <textarea class="uk-textarea" rows="5" name="job_additional"></textarea>
                                     </div>
-                                    <button type="submit" class="uk-button uk-button-primary btn">Нийтлэх</button>
+                                    <div class="uk-margin-left uk-margin-top uk-margin-bottom">
+                                        <button type="submit" class="uk-button uk-button-primary btn">Нийтлэх</button>
+                                    </div>
                                 </div>
                             </form>
                         </div>
