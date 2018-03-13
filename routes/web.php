@@ -16,9 +16,9 @@ Route::get('/company', function() {
 Route::get('/', function() {
 	return redirect()->route('home');
 });
-Route::get('/home', function() {
+Route::get('/', function() {
     return view('index');
-})->name('home');
+})->name('index');
 Route::get('/result', 'JobController@showResult');
 
 Route::group(['middleware' => ['auth']], function() {

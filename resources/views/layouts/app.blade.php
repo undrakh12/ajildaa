@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="mn">
+<html lang="en">
 <head>
     <title>Ажилдаа!</title>
     <meta charset="utf-8">
@@ -23,6 +23,6 @@
     <!-- main JS -->
     <script src="{{ asset('js/uikit.min.js') }}"></script>
     <script src="{{ asset('js/uikit-icons.min.js') }}"></script>
-    <script src="{{ asset('js/app.js') }}" async></script>
+    <script src="{{ asset('js/app.js') }}" async></script> 
 </body>
 </html>
