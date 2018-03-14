@@ -62,7 +62,7 @@
                         <li class="uk-padding uk-padding-small">
                             <div class="uk-clearfix">
                                 <div class="uk-float-left job-list">
-                                    <a href="/view-job" class="next">
+                                    <a href="/job/3" class="next">
                                         <h5>VueJS developer </h5>
                                         <h6>Woovoo ххк
                                             <span uk-icon="star"></span>
@@ -80,7 +80,7 @@
                         <li class="uk-padding uk-padding-small">
                             <div class="uk-clearfix">
                                 <div class="uk-float-left job-list">
-                                    <a href="/view-job" class="next">
+                                    <a href="/job/2" class="next">
                                         <h5>Зөөгч </h5>
                                         <h6>Modern nomads
                                             <span uk-icon="star"></span>
@@ -98,7 +98,7 @@
                         <li class="uk-padding uk-padding-small">
                             <div class="uk-clearfix">
                                 <div class="uk-float-left job-list">
-                                    <a href="/view-job" class="next">
+                                    <a href="/job/1" class="next">
                                         <h5>Бариста </h5>
                                         <h6>Modern nomads
                                             <span uk-icon="star"></span>
