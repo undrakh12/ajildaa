@@ -16,7 +16,7 @@
                     </div>
 
                     <div class="uk-navbar-right uk-margin uk-margin-right">
-                        <a href="" class="uk-margin uk-margin-large-right uk-margin-top home" uk-icon="icon: social"></a>
+                        <a href="" class="uk-margin uk-margin-large-right uk-margin-top home share" uk-icon="icon: social"></a>
                         <a href="/" class="prev home" uk-icon="icon: home"></a>
                     </div>
                 </nav>
@@ -151,4 +151,18 @@
             </footer>
         </div>
     </main>
+
+    <script>
+        document.querySelector('.share').addEventListener('click', function() {
+            if(navigator.share) {
+                navigator.share({
+                    title: 'Ajildaa!',
+                    text: 'Shalgah',
+                    url: 'https://ajildaa.amazonite.co',
+                })
+                .then(() => console.log("successful"))
+                .catch((error) => console.log("error", error));
+            }
+        });
+    </script>
 @endsection
