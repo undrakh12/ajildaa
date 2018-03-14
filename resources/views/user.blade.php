@@ -45,7 +45,7 @@
                                     <a href="/resume" class="uk-button uk-button-primary uk-float-left btn2">Миний анкет</a>
                                     @endif
                                     @if(Auth::user()->type == 'employer')
-                                    <a href="/applications" class="uk-button uk-button-primary uk-float-left btn2">Ирсэн хүсэлтүүдийг харах</a>
+                                    <a href="/applications" class="uk-button uk-button-primary uk-float-left btn2">Ирсэн хүсэлтүүд</a>
                                     @endif    
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" class="uk-float-right">
                                         {{ csrf_field() }}
@@ -63,16 +63,16 @@
                             <div class="uk-clearfix">
                                 <div class="uk-float-left job-list">
                                     <a href="/view-job" class="next">
-                                        <h5>job->job_name </h5>
-                                        <h6>Монгол хуушуур
+                                        <h5>VueJS developer </h5>
+                                        <h6>Woovoo ххк
                                             <span uk-icon="star"></span>
                                             <span uk-icon="star"></span>
                                             <span uk-icon="star"></span>
                                             <span uk-icon="star"></span>
                                             <span uk-icon="star"></span>
                                         </h6>
-                                        <h6>job->job_location</h6>
-                                        <h6 class="days"> $job->created_at </h6>
+                                        <h6>Баянгол дүүрэг</h6>
+                                        <h6 class="days"> 2018-03-07 05:49 </h6>
                                     </a>
                                 </div>
                             </div>
@@ -81,16 +81,34 @@
                             <div class="uk-clearfix">
                                 <div class="uk-float-left job-list">
                                     <a href="/view-job" class="next">
-                                        <h5>job->job_name </h5>
-                                        <h6>Монгол хуушуур
+                                        <h5>Зөөгч </h5>
+                                        <h6>Modern nomads
                                             <span uk-icon="star"></span>
                                             <span uk-icon="star"></span>
                                             <span uk-icon="star"></span>
                                             <span uk-icon="star"></span>
                                             <span uk-icon="star"></span>
                                         </h6>
-                                        <h6>job->job_location</h6>
-                                        <h6 class="days"> $job->created_at </h6>
+                                        <h6>Xан-уул дүүрэг</h6>
+                                        <h6 class="days"> 2018-03-07 06:49 </h6>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="uk-padding uk-padding-small">
+                            <div class="uk-clearfix">
+                                <div class="uk-float-left job-list">
+                                    <a href="/view-job" class="next">
+                                        <h5>Бариста </h5>
+                                        <h6>Modern nomads
+                                            <span uk-icon="star"></span>
+                                            <span uk-icon="star"></span>
+                                            <span uk-icon="star"></span>
+                                            <span uk-icon="star"></span>
+                                            <span uk-icon="star"></span>
+                                        </h6>
+                                        <h6>Xан-уул дүүрэг</h6>
+                                        <h6 class="days"> 2018-03-08 06:49 </h6>
                                     </a>
                                 </div>
                             </div>
