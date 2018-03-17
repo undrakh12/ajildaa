@@ -53,7 +53,7 @@ a{
 .spinner {
   width: 100px;
   height: 100px;
-  top: 28% !important;
+  top: 26% !important;
   left: 36% !important;
   background-color: #4c64ffb3;
   border-radius: 100%; 
@@ -63,7 +63,7 @@ a{
 .spinner2 {
 	width: 200px;
 	height: 200px;
-	top: 20% !important;
+	top: 18% !important;
   left: 22% !important;
 	background-color: #d1d6f5a6;
 	border-radius: 100%;
