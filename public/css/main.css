@@ -46,32 +46,27 @@ a{
 
 .logo {
 	width: 40%;
+	z-index: 100 !important;
 }
 
 /* start animation of logo */
 .spinner {
   width: 100px;
   height: 100px;
-  margin: 165px 134px;
-  top: 0;
-  bottom: 0;
+  top: 23% !important;
+  left: 33% !important;
   background-color: #8996ea;
-  position: absolute;
-  border-radius: 100%;  
-  z-index: 50;
+  border-radius: 100%; 
   -webkit-animation: sk-scaleout 3.0s infinite ease-in-out;
   animation: sk-scaleout 3.0s infinite ease-in-out;
 }
 .spinner2 {
 	width: 200px;
 	height: 200px;
-	margin: 111px 85px;
-	top: 0;
-	bottom: 0;
+	top: 16% !important;
+  left: 20% !important;
 	background-color: #d1d6f5a6;
-	position: absolute;
 	border-radius: 100%;
-	z-index: 50;
 	-webkit-animation: sk-scaleout 3.0s infinite ease-in-out;
 	animation: sk-scaleout 3.0s infinite ease-in-out;
   }
@@ -87,12 +82,12 @@ a{
 @keyframes sk-scaleout {
   0% { 
     -webkit-transform: scale(0);
-	transform: scale(0.5);
-	opacity: 0.1;
+	transform: scale(0.7);
+	opacity: 0.3;
   } 100% {
     -webkit-transform: scale(1.0);
     transform: scale(2);
-    opacity: 0.1;
+    opacity: 0.3;
   }
 }
 
