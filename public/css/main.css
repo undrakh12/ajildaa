@@ -53,8 +53,8 @@ a{
 .spinner {
   width: 100px;
   height: 100px;
-  top: 23% !important;
-  left: 33% !important;
+  top: 27% !important;
+  left: 38% !important;
   background-color: #8996ea;
   border-radius: 100%; 
   -webkit-animation: sk-scaleout 3.0s infinite ease-in-out;
@@ -63,8 +63,8 @@ a{
 .spinner2 {
 	width: 200px;
 	height: 200px;
-	top: 16% !important;
-  left: 20% !important;
+	top: 20% !important;
+  left: 25% !important;
 	background-color: #d1d6f5a6;
 	border-radius: 100%;
 	-webkit-animation: sk-scaleout 3.0s infinite ease-in-out;
