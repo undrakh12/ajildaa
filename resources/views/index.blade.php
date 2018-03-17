@@ -20,8 +20,10 @@
 				<div class="uk-container uk-container-center">
 					<div class="uk-grid-small uk-grid-match uk-text-center uk-margin-top" uk-grid>
 						<div class="uk-width-1-1">
-							<div class="head-section ">
-								<img src="images/logo.png" class="uk-responsive-width logo" alt="" uk-responsive>
+							<div class="head-section uk-margin-large-top uk-margin-large-bottom">
+								<div class="spinner"></div>
+								<div class="spinner2"></div>
+								<img src="images/logo.png" class="uk-responsive-width logo uk-margin-large-top uk-margin-large-bottom" alt="" uk-responsive>
 							</div>
 							<div class="search-section uk-margin-top">
 								<form action="/result" id="form">

@@ -45,7 +45,7 @@
                                     <a href="/resume" class="uk-button uk-button-primary uk-float-left btn2">Миний анкет</a>
                                     @endif
                                     @if(Auth::user()->type == 'employer')
-                                    <a href="/applications" class="uk-button uk-button-primary uk-float-left btn2">Ирсэн хүсэлтүүд</a>
+                                    <a href="/applications" class="uk-button uk-button-primary uk-float-left btn2">Хүсэлтүүд</a>
                                     @endif    
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" class="uk-float-right">
                                         {{ csrf_field() }}

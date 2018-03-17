@@ -43,7 +43,7 @@ self.addEventListener('fetch', (event) => {
                     cache.put(event.request, networkResponse.clone());
                     return networkResponse;
                 })
-                return response || fetchPromise
+                return response || fetchPromise;
             })
         })
     );
