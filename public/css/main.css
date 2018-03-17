@@ -53,9 +53,9 @@ a{
 .spinner {
   width: 100px;
   height: 100px;
-  top: 27% !important;
-  left: 38% !important;
-  background-color: #8996ea;
+  top: 28% !important;
+  left: 36% !important;
+  background-color: #4c64ffb3;
   border-radius: 100%; 
   -webkit-animation: sk-scaleout 3.0s infinite ease-in-out;
   animation: sk-scaleout 3.0s infinite ease-in-out;
@@ -64,7 +64,7 @@ a{
 	width: 200px;
 	height: 200px;
 	top: 20% !important;
-  left: 25% !important;
+  left: 22% !important;
 	background-color: #d1d6f5a6;
 	border-radius: 100%;
 	-webkit-animation: sk-scaleout 3.0s infinite ease-in-out;
@@ -86,7 +86,7 @@ a{
 	opacity: 0.3;
   } 100% {
     -webkit-transform: scale(1.0);
-    transform: scale(2);
+    transform: scale(1.5);
     opacity: 0.3;
   }
 }
