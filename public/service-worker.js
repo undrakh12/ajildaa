@@ -19,13 +19,30 @@ self.addEventListener('install', function(e) {
     );
 });
 
+self.addEventListener('fetch', (event) => {
+    event.respondWith(
+        caches.open('offline-clone').then(function(cache) {
+            return cache.match(event.request).then(function(response) {
+                var fetchPromise = fetch(event.request).then(function(networkResponse) {
+                    if(networkResponse) {
+                        cache.put(event.request, networkResponse.clone());
+                    }
+                    return networkResponse;
+                }, function(e) {
+                    
+                });
+                return response || fetchPromise;
+            });
+        }));
+    
+});
+
 self.addEventListener('activate', function(e) {
     e.waitUntil(
         caches.keys().then(function(cacheNames) {
             return Promise.all(cacheNames.map(function(thisCachename) {
-
+                
                 if(thisCachename !== cacheName) {
-
                     console.log('Removing cached files from cache', thisCachename);
                     return caches.delete(thisCachename);
                 }
@@ -33,19 +50,4 @@ self.addEventListener('activate', function(e) {
             }))
         })
     );
-});
-
-self.addEventListener('fetch', (event) => {
-    event.respondWith(
-        caches.open('offline').then(function(cache) {
-            return cache.match(event.request).then(function(response) {
-                var fetchPromise = fetch(event.request).then(function(networkResponse) {
-                    cache.put(event.request, networkResponse.clone());
-                    return networkResponse;
-                })
-                return response || fetchPromise;
-            })
-        })
-    );
-    
 });
