@@ -22,9 +22,9 @@
 						<div class="uk-width-1-1">
 							<div class="head-section uk-margin-large-top uk-margin-large-bottom">
 								
-								<img src="images/logo.png" class="uk-position-relative uk-responsive-width logo uk-margin-large-top uk-margin-large-bottom" alt="" uk-responsive>
-								<div class="uk-position-center uk-position-absolute spinner"></div>
-								<div class="uk-position-center uk-position-absolute spinner2"></div>
+								<img src="images/logo.png" class="uk-position-relative uk-responsive-width logo uk-margin-large-top" alt="" uk-responsive>
+								<!-- <div class="uk-position-center uk-position-absolute spinner"></div>
+								<div class="uk-position-center uk-position-absolute spinner2"></div> -->
 							</div>
 							<div class="search-section uk-margin-top">
 								<form action="/result" id="form">
