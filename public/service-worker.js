@@ -1,6 +1,5 @@
 var cacheName = 'adjildaa-v1';
 var cacheFiles = [
-    '/',
     '/css/main.css',
     '/css/uikit.min.css',
     '/js/app.js',

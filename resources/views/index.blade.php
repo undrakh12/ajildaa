@@ -22,7 +22,7 @@
 						<div class="uk-width-1-1">
 							<div class="head-section uk-margin-large-top uk-margin-large-bottom">
 								
-								<img src="images/logo.png" class="uk-position-relative uk-responsive-width logo uk-margin-large-top" alt="" uk-responsive>
+								<img src="images/logo.png" class="uk-position-relative uk-responsive-width logo uk-margin-small-top uk-margin-small-bottom" alt="" uk-responsive>
 								<!-- <div class="uk-position-center uk-position-absolute spinner"></div>
 								<div class="uk-position-center uk-position-absolute spinner2"></div> -->
 							</div>
