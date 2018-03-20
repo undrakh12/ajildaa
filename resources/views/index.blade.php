@@ -66,8 +66,8 @@
 					<div class="uk-grid">
 						<div class="uk-width-1-1 first-table">
 							<ul class="uk-list border-top">
-								<li class="uk-padding uk-padding-small">
-									<div class="uk-clearfix">
+								<li onclick='window.location.href=""' class="uk-margin-remove-top">
+									<div class="uk-padding-small uk-clearfix">
 										<div class="uk-float-left">
 											<a href="">
 												<h5>
@@ -82,8 +82,9 @@
 								</li>
 								@auth
 								@if(Auth::user()->type == 'student')
-								<li class="uk-padding uk-padding-small uk-padding-remove-top">
-									<div class="uk-clearfix">
+								
+								<li onclick='window.location.href="/resume"' class="uk-margin-remove-top">
+									<div class="uk-padding uk-padding-small uk-clearfix">
 										<div class="uk-float-left">
 											<a href="/resume">
 												<h5>
@@ -98,8 +99,8 @@
 								</li>
 								@endif
 								@endauth
-								<li class="uk-padding uk-padding-small uk-padding-remove-top">
-									<div class="uk-clearfix">
+								<li onclick='window.location.href="/login"' class="uk-margin-remove-top">
+									<div class="uk-padding uk-padding-small uk-clearfix">
 										<div class="uk-float-left">
 											@guest
 											<a href="/login">
@@ -122,8 +123,8 @@
 									</div>
 								</li>
 								
-								<li class="uk-padding uk-padding-small uk-padding-remove-top">
-									<div class="uk-clearfix post-link">
+								<li onclick='window.location.href="/job"' class="uk-margin-remove-top">
+									<div class="uk-padding uk-padding-small uk-clearfix post-link">
 										<div class="uk-float-left">
 											<a href="/job">
 												<h5>
