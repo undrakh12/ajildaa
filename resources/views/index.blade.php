@@ -66,7 +66,7 @@
 					<div class="uk-grid">
 						<div class="uk-width-1-1 first-table">
 							<ul class="uk-list border-top">
-								<li onclick='window.location.href=""' class="uk-margin-remove-top">
+								<li onclick='window.location.href=""' class="nav-list uk-margin-remove-top">
 									<div class="uk-padding-small uk-clearfix">
 										<div class="uk-float-left">
 											<a href="">
@@ -83,7 +83,7 @@
 								@auth
 								@if(Auth::user()->type == 'student')
 								
-								<li onclick='window.location.href="/resume"' class="uk-margin-remove-top">
+								<li onclick='window.location.href="/resume"' class="nav-list uk-margin-remove-top">
 									<div class="uk-padding uk-padding-small uk-clearfix">
 										<div class="uk-float-left">
 											<a href="/resume">
@@ -99,7 +99,7 @@
 								</li>
 								@endif
 								@endauth
-								<li onclick='window.location.href="/login"' class="uk-margin-remove-top">
+								<li onclick='window.location.href="/login"' class="nav-list uk-margin-remove-top">
 									<div class="uk-padding uk-padding-small uk-clearfix">
 										<div class="uk-float-left">
 											@guest
@@ -123,7 +123,7 @@
 									</div>
 								</li>
 								
-								<li onclick='window.location.href="/job"' class="uk-margin-remove-top">
+								<li onclick='window.location.href="/job"' class="nav-list uk-margin-remove-top">
 									<div class="uk-padding uk-padding-small uk-clearfix post-link">
 										<div class="uk-float-left">
 											<a href="/job">
