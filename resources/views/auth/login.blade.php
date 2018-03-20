@@ -25,7 +25,7 @@
             </div>
 
             <div class="search-section uk-margin-top">
-                <h4 class="uk-text-bold uk-margin-medium-bottom">Нэвтрэх хэсэг</h4>
+                <h4 class="uk-text-bold uk-margin-medium-bottom">Нэвтрэх</h4>
                 <form action="{{ route('login') }}" id="form" method="POST">
                     {{ csrf_field() }}
                     <div class="first-search-section">

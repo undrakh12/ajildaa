@@ -69,10 +69,7 @@
 								<li onclick='window.location.href=""' class="nav-list uk-margin-remove-top">
 									<div class="uk-padding-small uk-clearfix">
 										<div class="uk-float-left">
-											<a href="">
-												<h5>
-													<span class="uk-margin-small-right" uk-icon="settings"></span>Санал Болгож Буй Ажил</h5>
-											</a>
+											<h5><span class="uk-margin-small-right" uk-icon="settings"></span>Санал Болгож Буй Ажил</h5>
 										</div>
 										<div class="uk-float-right">
 											<span class="uk-margin-small-right" uk-icon="arrow-right"></span>
@@ -86,10 +83,7 @@
 								<li onclick='window.location.href="/resume"' class="nav-list uk-margin-remove-top">
 									<div class="uk-padding uk-padding-small uk-clearfix">
 										<div class="uk-float-left">
-											<a href="/resume">
-												<h5>
-													<span class="uk-margin-small-right" uk-icon="nut"></span>Миний Анкет</h5>
-											</a>
+											<h5><span class="uk-margin-small-right" uk-icon="nut"></span>Миний Анкет</h5>
 										</div>
 										<div class="uk-float-right">
 											<span class="uk-margin-small-right" uk-icon="arrow-right"></span>
@@ -99,7 +93,7 @@
 								</li>
 								@endif
 								@endauth
-								<li onclick='window.location.href="/login"' class="nav-list uk-margin-remove-top">
+								<li onclick='window.location.href="/user"' class="nav-list uk-margin-remove-top">
 									<div class="uk-padding uk-padding-small uk-clearfix">
 										<div class="uk-float-left">
 											@guest
