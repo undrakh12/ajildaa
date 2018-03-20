@@ -9,7 +9,7 @@ body {
     -webkit-font-smoothing: antialiased;
     text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.004);
     -moz-osx-font-smoothing: grayscale;
-    color: #565a5c;
+    /* color: #69cd70; */
 	/* font-family: 'OpenSans', sans-serif !important; */
 }
 
@@ -55,7 +55,7 @@ a{
   height: 100px;
   top: 26% !important;
   left: 36% !important;
-  background-color: #4c64ffb3;
+  background-color: #ee433c;
   border-radius: 100%; 
   -webkit-animation: sk-scaleout 3.0s infinite ease-in-out;
   animation: sk-scaleout 3.0s infinite ease-in-out;
@@ -103,11 +103,11 @@ a{
 }
 
 .search-input:checked {
-	background: #596cf0;
+	background: #ee433c;
 }
 
 .btn {
-	background: #4928f0 !important;
+	background: #ee433c !important;
 	border-radius: 30px !important;
 	width: 95%;
 	font-size: 0.975rem !important;
@@ -117,7 +117,7 @@ a{
 }
 
 .btn2 {
-	background: #4928f0 !important;
+	background: #ee433c !important;
 	border-radius: 30px !important;
 	font-size: 0.975rem !important;
 	text-transform: capitalize !important;
@@ -156,17 +156,17 @@ a{
 .btn-filter {
 	border-radius: 47px !important;
 	padding: 0 10px !important;
-	color: #4928f0 !important;
+	color: #ee433c !important;
 }
 
 .tab {
 	width: 50%;
 	padding-left: 0 !important;
-	border-color: #4a29f0 !important;
+	border-color: #ee433c !important;
 }
 
 	.uk-tab>.uk-active>a {
-		border-color: #4a29f0 !important;
+		border-color: #ee433c !important;
 	}
 
 .job-list .days {
@@ -179,7 +179,7 @@ a{
 }
 
 .job-list h5 {
-	color: #4928f0 !important;
+	color: #ee433c !important;
 	font-weight: bold;
 }
 
@@ -202,7 +202,7 @@ a{
 	.all-result li:nth-last-child(1) button {
 		width: 100%;
 		border: 1px solid #4928f0;
-		color: #4928f0;
+		color: #ee433c;
 		border-radius: 30px;
 		font-weight: bold;
 		text-transform: inherit;
@@ -210,7 +210,7 @@ a{
 
 	.all-result li:nth-last-child(2) button {
 		width: 100%;
-		background: #4928f0;
+		background: #ee433c;
 		border-radius: 30px;
 		font-weight: bold;
 		text-transform: inherit;
@@ -260,4 +260,15 @@ a{
 
 .login{
 	margin-top: 25px !important;
+}
+
+/* Notification style */
+.uk-notification-message {
+	background: #6b6b6b !important;
+	width: 69% !important;
+}
+
+.uk-notification-message-primary {
+	color: #fff !important;
+	font-size: 14px !important;
 }

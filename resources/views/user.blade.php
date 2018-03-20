@@ -3,13 +3,13 @@
 @section('content')
     <main id="barba-wrapper">
         <div class="barba-container" data-prev="home" data-next="home">
-            <header class="header" uk-sticky="top: 0">
+            <!-- <header class="header" uk-sticky="top: 0">
                 <nav class="main-navbar uk-navbar-container" uk-navbar>
                     <div class="uk-navbar-left">
                         <a href="/" class="uk-margin-small-left arrow-left" uk-icon="arrow-left"></a>
                         <ul class="uk-navbar-nav">
                             <li class="uk-active">
-                                <a href="/">Ажил хайх</a>
+                                <a href="/">Миний профайл</a>
                             </li>
                         </ul>
                     </div>
@@ -18,7 +18,7 @@
                         <a href="/" class="home" uk-icon="icon: home"></a>
                     </div>
                 </nav>
-            </header>
+            </header> -->
 
             <section class="body apply-body" uk-height-viewport="expand: true">
 

@@ -3,6 +3,7 @@ var cacheFiles = [
     '/css/main.css',
     '/css/uikit.min.css',
     '/js/app.js',
+    '/js/offline.js',
     '/js/uikit.min.js',
     '/js/uikit-icons.min.js',
     '/images/logo.png'

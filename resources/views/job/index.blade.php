@@ -3,7 +3,7 @@
 @section('content')
     <main id="barba-wrapper">
         <div class="barba-container" data-prev="result" data-next="apply">
-            <header class="header" uk-sticky="top: 0">
+            <!-- <header class="header" uk-sticky="top: 0">
                 <nav class="main-navbar uk-navbar-container" uk-navbar>
                     <div class="uk-navbar-left">
                         <a href="{{ url()->previous() }}" class="uk-margin-small-left prev arrow-left" uk-icon="arrow-left"></a>
@@ -20,7 +20,7 @@
                         <a href="/" class="prev home" uk-icon="icon: home"></a>
                     </div>
                 </nav>
-            </header>
+            </header> -->
 
             <section class="body job-height">
                 <div class="uk-container uk-container-center">
@@ -156,9 +156,9 @@
         document.querySelector('.share').addEventListener('click', function() {
             if(navigator.share) {
                 navigator.share({
-                    title: 'Ajildaa!',
-                    text: 'Shalgah',
-                    url: 'https://ajildaa.amazonite.co',
+                    title: 'Ажилдаа!',
+                    text: 'Чамд тохирох ажил байна.',
+                    url: window.location.href',
                 })
                 .then(() => console.log("successful"))
                 .catch((error) => console.log("error", error));
