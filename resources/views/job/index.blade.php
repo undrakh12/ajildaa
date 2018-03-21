@@ -158,7 +158,7 @@
                 navigator.share({
                     title: 'Ажилдаа!',
                     text: 'Чамд тохирох ажил байна.',
-                    url: window.location.href',
+                    url: window.location.href,
                 })
                 .then(() => console.log("successful"))
                 .catch((error) => console.log("error", error));
