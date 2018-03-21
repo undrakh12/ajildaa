@@ -4,10 +4,10 @@
 
     <main id="barba-wrapper">
         <div class="barba-container" data-prev="home"  data-next="view-job">
-            <!-- <header class="header" uk-sticky="top: 0">
+            <header class="header" uk-sticky="top: 0">
                 <nav class="main-navbar uk-navbar-container" uk-navbar>
                     <div class="uk-navbar-left">
-                        <a href="{{ url()->previous() }}" class="uk-margin-small-left prev arrow-left" uk-icon="arrow-left"></a>
+                        <a href="{{ url()->previous() }}" class="uk-margin-small-left prev arrow-left" uk-icon="chevron-left"></a>
                         <ul class="uk-navbar-nav">
                             <li class="uk-active">
                                 <a>Ажил хайх</a>
@@ -19,7 +19,7 @@
                         <a href="/" class="prev home" uk-icon="icon: home"></a>
                     </div>
                 </nav>
-            </header> -->
+            </header>
 
             <section class="body">
 

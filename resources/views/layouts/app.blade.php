@@ -25,5 +25,6 @@
     <script src="{{ asset('js/uikit-icons.min.js') }}"></script>
     <script src="{{ asset('js/app.js') }}" async></script> 
     <script src="{{ asset('js/offline.js') }}"></script> 
+    <script src="http://localhost/ajildaa/node_modules/sw-toolbox/companion.js" data-service-worker="service-worker.js"></script>
 </body>
 </html>

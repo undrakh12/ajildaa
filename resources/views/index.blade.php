@@ -3,18 +3,18 @@
 @section('content')
 	<main id="barba-wrapper">
       <div class="barba-container app__layout" data-prev="/" data-next="/result">
-			<!-- <header class="header" style="z-index: 980;" uk-sticky="bottom: true">
+			<header class="header" style="z-index: 980;" uk-sticky="bottom: true">
 				<nav class="main-navbar uk-navbar-container" uk-navbar>
 					<div class="uk-navbar-left">
 						<ul class="uk-navbar-nav">
 							<li class="uk-active">
-								<a href="/" class="prev">Ажил хайх</a>
+								<a href="/" class="prev uk-text-lowercase">Ажил хайх</a>
 							</li>
 						</ul>
 
 					</div>
 				</nav>
-			</header> -->
+			</header>
 
 			<section class="body">
 				<div class="uk-container uk-container-center">

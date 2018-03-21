@@ -1,7 +1,7 @@
-/* @font-face {
+@font-face {
     font-family: OpenSans;
     src: url("../fonts/OpenSans-Regular.woff");
-} */
+}
 
 html,
 body {
@@ -10,11 +10,11 @@ body {
     text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.004);
     -moz-osx-font-smoothing: grayscale;
     /* color: #69cd70; */
-	/* font-family: 'OpenSans', sans-serif !important; */
+	font-family: 'OpenSans', sans-serif !important;
 }
 
 h1, h2, h3, h4, h5, h6{
-	/* font-family: 'OpenSans', sans-serif !important; */
+	font-family: 'OpenSans', sans-serif !important;
 	color: #000 !important;
 	margin-bottom: 0 !important;
 	margin-top: 0 !important;
@@ -30,7 +30,7 @@ a{
 
 .main-navbar {
 	height: 45px;
-	background: #000000 !important;	
+	background: #4051b5 !important;	
 }
 
 	.main-navbar .arrow-left{
@@ -39,6 +39,7 @@ a{
 
 	.main-navbar .home{
 		height: 20px !important;
+		color: #fff !important;
 	}
 	
 	.main-navbar a{
@@ -118,6 +119,16 @@ a{
 	text-transform: capitalize !important;
 	line-height: 45px !important;
 	text-decoration: none !important;
+}
+
+.login-btn {
+	width: 45%;
+}
+
+.register-btn {
+	width: 46%;
+	color: #888888 !important;
+	background: #f3f3f2 !important;
 }
 
 .btn2 {
@@ -240,10 +251,6 @@ a{
 } */
 
 /* apply.html */
-
-.apply-body{
-	background: #e2e2e2;
-}
 
 .resume h6{
 	font-size: 15px;
