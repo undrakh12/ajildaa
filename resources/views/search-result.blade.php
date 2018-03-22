@@ -46,29 +46,28 @@
                             <li class="all-result">
                                 <ul class="uk-list uk-list-divider">
                                     @foreach($jobs as $job)
-                                    <li class="uk-padding-small uk-padding-remove-top uk-padding-remove-bottom uk-padding-remove-left">
+                                    <li onclick='window.location.href="/job/{{ $job->id }}"' class="uk-padding-small uk-padding-remove-top uk-padding-remove-bottom uk-padding-remove-left uk-padding-remove-right nav-list">
                                         <div class="uk-clearfix">
-                                            <div class="job-list">
-                                                <a href="/job/{{ $job->id }}" class="next">
-                                                <div class="search-logo uk-float-left uk-padding-remove">
-                                                    <img src="images/logo.png" class="logo1" alt="">
-                                                </div>
-                                                <div class="content uk-float-right uk-margin-top">
+                                            <div class="uk-float-left job-list uk-padding-small">
+                                                
+                                                <div class="content">
                                                     <h5>{{ $job->job_name }}</h5>
-                                                    <h6>Монгол хуушуур
-                                                        <span uk-icon="star"></span>
-                                                        <span uk-icon="star"></span>
-                                                        <span uk-icon="star"></span>
-                                                        <span uk-icon="star"></span>
-                                                        <span uk-icon="star"></span>
+                                                    <h6>And Global Systems LLC     
+                                                    <div>   
+                                                        <span class="star-icon" uk-icon="icon: star; ratio:0.7;" style="margin: -2px !important;"></span>
+                                                        <span class="star-icon" uk-icon="icon: star; ratio:0.7;" style="margin: -2px !important;"></span>
+                                                        <span class="star-icon" uk-icon="icon: star; ratio:0.7;" style="margin: -2px !important;"></span>
+                                                        <span class="star-icon" uk-icon="icon: star; ratio:0.7;" style="margin: -2px !important;"></span>
+                                                        <span class="star-icon" uk-icon="icon: star; ratio:0.7;" style="margin: -2px !important;"></span>
+                                                    </div>
                                                     </h6>
                                                     <h6>{{ $job->job_location }}</h6>
                                                     <h6 class="days">{{ $job->created_at }}</h6>
-                                                </div>
-                                                    
-                                                </a>
+                                                </div>     
                                             </div>
-
+                                            <div class="uk-float-right">
+                                                <a class="uk-margin-small-right uk-margin-top" uk-icon="heart"></a>
+                                            </div>
                                         </div>
                                     </li>
                                     @endforeach
