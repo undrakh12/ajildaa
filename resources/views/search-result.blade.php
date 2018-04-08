@@ -7,7 +7,7 @@
             <header class="header" uk-sticky="top: 0">
                 <nav class="main-navbar uk-navbar-container" uk-navbar>
                     <div class="uk-navbar-left">
-                        <a href="{{ url()->previous() }}" class="uk-margin-small-left prev arrow-left" uk-icon="arrow-left"></a>
+                        <a href="{{ url()->previous() }}" class="uk-margin-small-left prev arrow-left" uk-icon="chevron-left"></a>
                         <ul class="uk-navbar-nav">
                             <li class="uk-active">
                                 <a>Ажил хайх</a>
@@ -40,40 +40,34 @@
                 </div>
 
                 <div class="search-result">
-                    <div class="uk-margin-medium-top">
-                        <ul class="uk-flex-center no-margin" data-uk-tab="{connect:'#all-result'}">
-                            <li class="uk-active tab">
-                                <a href="#all-result">Бүгд</a>
-                            </li>
-                            <li class="tab">
-                                <a href="#new-result">Шинэ</a>
-                            </li>
-                        </ul>
+                    <div class="uk-margin-small-top">
 
-                        <ul id="my-id" class="uk-switcher">
+                        <ul id="my-id" class="uk-list search-result">
                             <li class="all-result">
                                 <ul class="uk-list uk-list-divider">
                                     @foreach($jobs as $job)
-                                    <li class="uk-padding uk-padding-small">
+                                    <li onclick='window.location.href="/job/{{ $job->id }}"' class="uk-padding-small uk-padding-remove-top uk-padding-remove-bottom uk-padding-remove-left uk-padding-remove-right nav-list">
                                         <div class="uk-clearfix">
-                                            <div class="uk-float-left job-list">
-                                                <a href="/job/{{ $job->id }}" class="next">
+                                            <div class="uk-float-left job-list uk-padding-small">
+                                                
+                                                <div class="content">
                                                     <h5>{{ $job->job_name }}</h5>
-                                                    <h6>Монгол хуушуур
-                                                        <span uk-icon="star"></span>
-                                                        <span uk-icon="star"></span>
-                                                        <span uk-icon="star"></span>
-                                                        <span uk-icon="star"></span>
-                                                        <span uk-icon="star"></span>
+                                                    <h6>And Global Systems LLC     
+                                                    <div>   
+                                                        <span class="star-icon" uk-icon="icon: star; ratio:0.7;" style="margin: -2px !important;"></span>
+                                                        <span class="star-icon" uk-icon="icon: star; ratio:0.7;" style="margin: -2px !important;"></span>
+                                                        <span class="star-icon" uk-icon="icon: star; ratio:0.7;" style="margin: -2px !important;"></span>
+                                                        <span class="star-icon" uk-icon="icon: star; ratio:0.7;" style="margin: -2px !important;"></span>
+                                                        <span class="star-icon" uk-icon="icon: star; ratio:0.7;" style="margin: -2px !important;"></span>
+                                                    </div>
                                                     </h6>
                                                     <h6>{{ $job->job_location }}</h6>
                                                     <h6 class="days">{{ $job->created_at }}</h6>
-                                                </a>
+                                                </div>     
                                             </div>
                                             <div class="uk-float-right">
-                                                <a class="uk-margin-small-right" uk-icon="heart"></a>
+                                                <a class="uk-margin-small-right uk-margin-top" uk-icon="heart"></a>
                                             </div>
-
                                         </div>
                                     </li>
                                     @endforeach
@@ -87,41 +81,6 @@
                                 </ul>
                             </li>
 
-                            <!-- new result start -->
-
-                            <li class="all-result new-result">
-                                <ul class="uk-list uk-list-divider">
-                                @foreach($latest as $latest_job)
-                                    <li class="uk-padding uk-padding-small">
-                                        <div class="uk-clearfix">
-                                            <div class="uk-float-left job-list">
-                                                <a href="">
-                                                    <h5>{{ $latest_job->job_name }}</h5>
-                                                    <h6>Монгол бууз
-                                                        <span uk-icon="star"></span>
-                                                        <span uk-icon="star"></span>
-                                                        <span uk-icon="star"></span>
-                                                        <span uk-icon="star"></span>
-                                                        <span uk-icon="star"></span>
-                                                    </h6>
-                                                    <h6>{{ $latest_job->job_location }}</h6>
-                                                    <h6 class="days">{{ $latest_job->created_at }}</h6>
-                                                </a>
-                                            </div>
-                                            <div class="uk-float-right">
-                                                <a class="uk-margin-small-right" uk-icon="heart"></a>
-                                            </div>
-
-                                        </div>
-                                    </li>
-                                @endforeach
-                                    <li class="uk-padding uk-padding-large uk-text-center">
-                                        <button class="uk-button uk-button-primary push-but">Ажлын мэдээллээ цаг алдалгүй ав</button>
-                                    </li>
-                                    <div class="new-footer"></div>
-                                </ul>
-                            </li>
-                            <!-- new start end -->
                         </ul>
                     </div>
                 </div>

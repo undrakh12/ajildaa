@@ -9,7 +9,7 @@ body {
     -webkit-font-smoothing: antialiased;
     text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.004);
     -moz-osx-font-smoothing: grayscale;
-    color: #565a5c;
+    /* color: #69cd70; */
 	/* font-family: 'OpenSans', sans-serif !important; */
 }
 
@@ -24,13 +24,13 @@ a{
 	text-decoration: none !important;
 }
 
-btn{
-	text-decoration: none !important;
+.nav-list:active {
+	background: #fbe6e6 !important;
 }
 
 .main-navbar {
 	height: 45px;
-	background: #000000 !important;	
+	background: #3F51B5	!important;	
 }
 
 	.main-navbar .arrow-left{
@@ -39,6 +39,7 @@ btn{
 
 	.main-navbar .home{
 		height: 20px !important;
+		color: #fff !important;
 	}
 	
 	.main-navbar a{
@@ -50,7 +51,52 @@ btn{
 
 .logo {
 	width: 40%;
+	z-index: 100 !important;
 }
+
+/* start animation of logo */
+.spinner {
+  width: 100px;
+  height: 100px;
+  top: 26% !important;
+  left: 36% !important;
+  background-color: #ee433c;
+  border-radius: 100%; 
+  -webkit-animation: sk-scaleout 3.0s infinite ease-in-out;
+  animation: sk-scaleout 3.0s infinite ease-in-out;
+}
+.spinner2 {
+	width: 200px;
+	height: 200px;
+	top: 18% !important;
+  left: 22% !important;
+	background-color: #d1d6f5a6;
+	border-radius: 100%;
+	-webkit-animation: sk-scaleout 3.0s infinite ease-in-out;
+	animation: sk-scaleout 3.0s infinite ease-in-out;
+  }
+
+@-webkit-keyframes sk-scaleout {
+  0% { -webkit-transform: scale(0.6) }
+  100% {
+    -webkit-transform: scale(1.0);
+    opacity: 0;
+  }
+}
+
+@keyframes sk-scaleout {
+  0% { 
+    -webkit-transform: scale(0);
+	transform: scale(0.7);
+	opacity: 0.3;
+  } 100% {
+    -webkit-transform: scale(1.0);
+    transform: scale(1.5);
+    opacity: 0.3;
+  }
+}
+
+/* end animation of logo */
 
 .search-inline {
 	width: 95% !important;
@@ -58,19 +104,35 @@ btn{
 
 .search-input {
 	border-radius: 20px !important;
+	border: 2px solid #e5e5e5 !important;
+}
+
+.search-input:checked {
+	background: #ee433c;
 }
 
 .btn {
-	background: #4928f0 !important;
+	background: #ee433c !important;
 	border-radius: 30px !important;
 	width: 95%;
 	font-size: 0.975rem !important;
 	text-transform: capitalize !important;
 	line-height: 45px !important;
+	text-decoration: none !important;
+}
+
+.login-btn {
+	width: 45%;
+}
+
+.register-btn {
+	width: 46%;
+	color: #888888 !important;
+	background: #f3f3f2 !important;
 }
 
 .btn2 {
-	background: #4928f0 !important;
+	background: #ee433c !important;
 	border-radius: 30px !important;
 	font-size: 0.975rem !important;
 	text-transform: capitalize !important;
@@ -86,6 +148,14 @@ btn{
 }
 
 /* search-result.html */
+.uk-list ul {
+	padding-left: 0 !important;
+}
+
+.search-logo {
+	width: 35% !important;
+}
+
 .no-margin {
 	margin-bottom: 0;
 }
@@ -101,17 +171,17 @@ btn{
 .btn-filter {
 	border-radius: 47px !important;
 	padding: 0 10px !important;
-	color: #4928f0 !important;
+	color: #ee433c !important;
 }
 
 .tab {
 	width: 50%;
 	padding-left: 0 !important;
-	border-color: #4a29f0 !important;
+	border-color: #ee433c !important;
 }
 
 	.uk-tab>.uk-active>a {
-		border-color: #4a29f0 !important;
+		border-color: #ee433c !important;
 	}
 
 .job-list .days {
@@ -124,7 +194,7 @@ btn{
 }
 
 .job-list h5 {
-	color: #4928f0 !important;
+	color: #ee433c !important;
 	font-weight: bold;
 }
 
@@ -146,8 +216,8 @@ btn{
 
 	.all-result li:nth-last-child(1) button {
 		width: 100%;
-		border: 1px solid #4928f0;
-		color: #4928f0;
+		border: 1px solid #ee433c;
+		color: #ee433c;
 		border-radius: 30px;
 		font-weight: bold;
 		text-transform: inherit;
@@ -155,7 +225,7 @@ btn{
 
 	.all-result li:nth-last-child(2) button {
 		width: 100%;
-		background: #4928f0;
+		background: #ee433c;
 		border-radius: 30px;
 		font-weight: bold;
 		text-transform: inherit;
@@ -182,10 +252,6 @@ btn{
 
 /* apply.html */
 
-.apply-body{
-	background: #e2e2e2;
-}
-
 .resume h6{
 	font-size: 15px;
 }
@@ -205,4 +271,60 @@ btn{
 
 .login{
 	margin-top: 25px !important;
+}
+
+/* Notification style */
+.uk-notification-message {
+	background: #6b6b6b !important;
+	width: 69% !important;
+}
+
+.uk-notification-message-primary {
+	color: #fff !important;
+	font-size: 14px !important;
+}
+
+/* start here star */
+.button{
+	width: 50px;
+	height: 50px;
+  top:50%;
+  position: fixed;
+	left: 50%;
+	margin-top: -45px;
+	margin-left: -50px;
+	border-radius: 5px;
+	background: none;
+	cursor: pointer;
+	transition: background 0.5s ease;
+}
+.button:hover{
+
+}
+.active#heart:before,.active#heart:after{
+	background: red !important;
+}
+#heart {
+    width: 100px;
+    height: 90px;
+    transition: background 0.5s ease;
+}
+#heart:before,
+#heart:after {
+	transition: background 0.5s ease;
+    position: absolute;
+    content: "";
+    left: 50px;
+    top: 0;
+    width: 50px;
+    height: 80px;
+    background: dimgrey;
+    border-radius: 50px 50px 0 0;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+}
+#heart:after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin :100% 100%;
 }

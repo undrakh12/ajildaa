@@ -2,13 +2,13 @@
 
 @section('content')
 	<main id="barba-wrapper">
-      <div class="barba-container" data-prev="/" data-next="/result">
-			<header class="header" uk-sticky="top: 0">
+      <div class="barba-container app__layout" data-prev="/" data-next="/result">
+			<header class="header" style="z-index: 980;" uk-sticky="bottom: true">
 				<nav class="main-navbar uk-navbar-container" uk-navbar>
 					<div class="uk-navbar-left">
 						<ul class="uk-navbar-nav">
 							<li class="uk-active">
-								<a href="/" class="prev">Ажил хайх</a>
+								<a href="/" class="prev uk-text-lowercase">Ажил хайх</a>
 							</li>
 						</ul>
 
@@ -20,8 +20,11 @@
 				<div class="uk-container uk-container-center">
 					<div class="uk-grid-small uk-grid-match uk-text-center uk-margin-top" uk-grid>
 						<div class="uk-width-1-1">
-							<div class="head-section ">
-								<img src="images/logo.png" class="uk-responsive-width logo" alt="" uk-responsive>
+							<div class="head-section uk-margin-large-top uk-margin-large-bottom">
+								
+								<img src="images/logo.png" class="uk-position-relative uk-responsive-width logo uk-margin-small-top uk-margin-small-bottom" alt="" uk-responsive>
+								<!-- <div class="uk-position-center uk-position-absolute spinner"></div>
+								<div class="uk-position-center uk-position-absolute spinner2"></div> -->
 							</div>
 							<div class="search-section uk-margin-top">
 								<form action="/result" id="form">
@@ -63,13 +66,10 @@
 					<div class="uk-grid">
 						<div class="uk-width-1-1 first-table">
 							<ul class="uk-list border-top">
-								<li class="uk-padding uk-padding-small">
-									<div class="uk-clearfix">
+								<li onclick='window.location.href=""' class="nav-list uk-margin-remove-top">
+									<div class="uk-padding-small uk-clearfix">
 										<div class="uk-float-left">
-											<a href="">
-												<h5>
-													<span class="uk-margin-small-right" uk-icon="settings"></span>Санал Болгож Буй Ажил</h5>
-											</a>
+											<h5><span class="uk-margin-small-right" uk-icon="settings"></span>Санал Болгож Буй Ажил</h5>
 										</div>
 										<div class="uk-float-right">
 											<span class="uk-margin-small-right" uk-icon="arrow-right"></span>
@@ -79,13 +79,11 @@
 								</li>
 								@auth
 								@if(Auth::user()->type == 'student')
-								<li class="uk-padding uk-padding-small uk-padding-remove-top">
-									<div class="uk-clearfix">
+								
+								<li onclick='window.location.href="/resume"' class="nav-list uk-margin-remove-top">
+									<div class="uk-padding uk-padding-small uk-clearfix">
 										<div class="uk-float-left">
-											<a href="/resume">
-												<h5>
-													<span class="uk-margin-small-right" uk-icon="nut"></span>Миний Анкет</h5>
-											</a>
+											<h5><span class="uk-margin-small-right" uk-icon="nut"></span>Миний Анкет</h5>
 										</div>
 										<div class="uk-float-right">
 											<span class="uk-margin-small-right" uk-icon="arrow-right"></span>
@@ -95,8 +93,8 @@
 								</li>
 								@endif
 								@endauth
-								<li class="uk-padding uk-padding-small uk-padding-remove-top">
-									<div class="uk-clearfix">
+								<li onclick='window.location.href="/user"' class="nav-list uk-margin-remove-top">
+									<div class="uk-padding uk-padding-small uk-clearfix">
 										<div class="uk-float-left">
 											@guest
 											<a href="/login">
@@ -119,8 +117,8 @@
 									</div>
 								</li>
 								
-								<li class="uk-padding uk-padding-small uk-padding-remove-top">
-									<div class="uk-clearfix post-link">
+								<li onclick='window.location.href="/job"' class="nav-list uk-margin-remove-top">
+									<div class="uk-padding uk-padding-small uk-clearfix post-link">
 										<div class="uk-float-left">
 											<a href="/job">
 												<h5>

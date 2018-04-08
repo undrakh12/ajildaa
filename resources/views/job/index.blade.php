@@ -6,7 +6,7 @@
             <header class="header" uk-sticky="top: 0">
                 <nav class="main-navbar uk-navbar-container" uk-navbar>
                     <div class="uk-navbar-left">
-                        <a href="{{ url()->previous() }}" class="uk-margin-small-left prev arrow-left" uk-icon="arrow-left"></a>
+                        <a href="{{ url()->previous() }}" class="uk-margin-small-left prev arrow-left" uk-icon="chevron-left"></a>
 
                         <ul class="uk-navbar-nav">
                             <li class="uk-active">
@@ -16,7 +16,7 @@
                     </div>
 
                     <div class="uk-navbar-right uk-margin uk-margin-right">
-                        <a href="" class="uk-margin uk-margin-large-right uk-margin-top home share" uk-icon="icon: social"></a>
+                        <a href="" class="uk-margin uk-margin-large-right uk-margin-top home share" uk-icon="icon: facebook"></a>
                         <a href="/" class="prev home" uk-icon="icon: home"></a>
                     </div>
                 </nav>
@@ -156,9 +156,9 @@
         document.querySelector('.share').addEventListener('click', function() {
             if(navigator.share) {
                 navigator.share({
-                    title: 'Ajildaa!',
-                    text: 'Shalgah',
-                    url: 'https://ajildaa.amazonite.co',
+                    title: 'Ажилдаа!',
+                    text: 'Чамд тохирох ажил байна.',
+                    url: window.location.href,
                 })
                 .then(() => console.log("successful"))
                 .catch((error) => console.log("error", error));

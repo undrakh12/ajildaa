@@ -4,7 +4,7 @@
 <header class="header" uk-sticky="top: 0">
     <nav class="main-navbar uk-navbar-container" uk-navbar>
         <div class="uk-navbar-left">
-            <a href="{{ url()->previous() }}" class="uk-margin-small-left prev arrow-left" uk-icon="arrow-left"></a>
+            <a href="{{ url()->previous() }}" class="uk-margin-small-left prev arrow-left" uk-icon="chevron-left"></a>
             <ul class="uk-navbar-nav">
                 <li class="uk-active">
                     <a>Ажил хайх</a>
@@ -12,9 +12,9 @@
             </ul>
         </div>
 
-        <div class="uk-navbar-right uk-margin uk-margin-right">
+        <!-- <div class="uk-navbar-right uk-margin uk-margin-right">
             <a href="/" class="prev home" uk-icon="icon: home"></a>
-        </div>
+        </div> -->
     </nav>
 </header>
 <div class="uk-container uk-container-center">
@@ -25,7 +25,7 @@
             </div>
 
             <div class="search-section uk-margin-top">
-                <h4 class="uk-text-bold uk-margin-medium-bottom">Нэвтрэх хэсэг</h4>
+                <h4 class="uk-text-bold uk-margin-medium-bottom">Нэвтрэх</h4>
                 <form action="{{ route('login') }}" id="form" method="POST">
                     {{ csrf_field() }}
                     <div class="first-search-section">
@@ -52,10 +52,11 @@
 
                     <div class="third-section uk-margin-medium-top">
 
-                        <button class="uk-button uk-button-primary btn" id="third">Нэвтрэх</button>
+                        <button class="uk-button uk-button-primary btn login-btn" id="third">Нэвтрэх</button>
+                        <a href="/register" class="uk-button uk-button-primary uk-margin-small-left btn register-btn" id="third">Бүртгүүлэх</a>
                     </div>
                 </form>
-                <p>Хэрвээ та бүртгэлгүй бол <a href="/register">энд</a> дарж бүртгүүлнэ үү.</p>
+                <p class="uk-margin-medium-top"><a class="uk-text" href="/register" style="color:#72d58e;">Нууц үгээ сэргээх</a></p>
             </div>
 
         </div>

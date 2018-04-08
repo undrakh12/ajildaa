@@ -6,7 +6,7 @@
             <header class="header" uk-sticky="top: 0">
                 <nav class="main-navbar uk-navbar-container" uk-navbar>
                     <div class="uk-navbar-left">
-                        <a href="/" class="uk-margin-small-left prev arrow-left" uk-icon="arrow-left"></a>
+                        <a href="/" class="uk-margin-small-left prev arrow-left" uk-icon="chevron-left"></a>
                         <ul class="uk-navbar-nav">
                             <li class="uk-active">
                                 <a>Ажил хайх</a>
