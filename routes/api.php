@@ -16,3 +16,6 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+//Бүх ажлын заруудыг дуудах
+Route::get('jobs', 'Api\JobController@index');

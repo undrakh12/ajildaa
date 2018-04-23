@@ -23,7 +23,7 @@ Route::get('/result', 'JobController@showResult');
 
 Route::group(['middleware' => ['auth']], function() {
     Route::resource('user', 'UserController');
-    Route::resource('job', 'JobController');
+    // Route::resource('job', 'JobController');
     Route::resource('resume', 'ResumeController');
     Route::resource('apply', 'ApplyController');
     Route::get('/user/jobs', 'ApplyController@showAppliedJobs');
